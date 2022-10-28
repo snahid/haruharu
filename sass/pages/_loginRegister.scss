@@ -1,0 +1,117 @@
+.login-register-wrapper {
+  margin-top: 110px;
+  font-family: $karla-font;
+  margin-bottom: 60px;
+  .login-register-inner {
+    max-width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    .title {
+      h3 {
+        text-align: center;
+        font-size: 30px;
+        color: #171717;
+        margin-bottom: 30px;
+      }
+      p{
+        color: #707173;
+        font-size: 17px;
+        text-align: center;
+      }
+    }
+    form{
+        .form-group{
+            margin-bottom: 25px;
+            label{
+                font-size: 17px;
+                color: #707173;
+                font-weight: 700;
+                margin-bottom: 5px;
+            }
+            input{
+                border-radius: 3px;
+                padding: 0.8em 15px;
+                line-height: 17px;
+                border: 1.5px solid #dbdcdc;
+                font-size: 17px;
+                color: #707173;
+                &:focus{
+                    box-shadow: none;
+                    border-color: #707173;
+                }
+            }
+        }
+        .forgot-wrapper{
+            position: relative;
+            a{
+                position: absolute;
+                right: 0;
+                top: -22px;
+                color: #000;
+                font-size: 14px;
+                transition: 0.3s;
+
+                &:hover {
+                    color: #AB6857;
+                }
+            }
+        }
+        .submit-wrapper{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 40px;
+            .submitbtn{
+                text-decoration: none;
+                background: #212b36;
+                border: 1.5px solid #212b36;
+                color: #fff;
+                font-size: 15px;
+                padding: 15px 30px;
+                border-radius: 3px;
+                text-transform: uppercase;
+                transition: 0.3s;
+
+                &:hover {
+                    background-color: #AB6857;
+                    color: #fff;
+                    border-color: #AB6857;
+                }
+            }
+            a{
+                color: #000;
+                font-size: 17px;
+                transition: 0.3s;
+
+                &:hover {
+                    color: #AB6857;
+                }
+            }
+        }
+        .link{
+            color: #707173;
+            margin-top: 10px;
+            a{
+                text-decoration: none;
+                color: #000;
+                font-size: 17px;
+                transition: 0.3s;
+
+                &:hover {
+                    color: #AB6857;
+                }
+            }
+        }
+        .cancel{
+            color: #000;
+            font-size: 17px;
+        }
+    }
+  }
+}
+
+
+.forgot-container{
+    display: none;
+}
