@@ -53,7 +53,7 @@
                             <a href="./index.html"><img src="./assets/HomePage/black-logo.avif" alt=""></a>
                         </div>
                         <div class="header-inner-right">
-                            <ul>
+                            <ul class="header-rightul">
                                 <li>
                                     <!-- Search-form  -->
                                     <form action="">
@@ -98,21 +98,19 @@
                         <a href="./assets/HomePage/product-details-big.png"><img
                                 src="./assets/HomePage/product-details-big.png" alt=""></a>
                     </div>
-                    <div class="smallimage">
-                        <div class="gallery">
+                    <div class="smallimage gallery">
+                        <!-- <div class="gallery"> -->
                             <a href="./assets/HomePage/best-seller4.jpg"><img src="./assets/HomePage/best-seller4.jpg"
                                     alt=""></a>
-                        </div>
-                        <div class="gallery">
+                        <!-- </div> -->
+                        <!-- <div class="gallery"> -->
                             <a href="./assets/HomePage/product-details-big.png"><img
                                     src="./assets/HomePage/product-details-big.png" alt=""></a>
-                        </div>
-                        <div class="gallery">
+                        <!-- </div> -->
+                        <!-- <div class="gallery"> -->
                             <a href="./assets/HomePage/best-seller4.jpg"><img src="./assets/HomePage/best-seller4.jpg"
                                     alt=""></a>
-                        </div>
-
-
+                        <!-- </div> -->
 
                     </div>
                 </div>
@@ -143,33 +141,24 @@
                             <a href="#" class="buy-now">Buy Now</a>
                             <a href="#" class="Add-to-Cart">Add to Cart</a>
                             <div class="count">
-                                <div class="count-left">
-                                    <div class="top">
-                                        <a class="cart-minus" href="javascript:void(0);"><svg
-                                                xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="feather feather-minus">
-                                                <title>Minus</title>
-                                                <line x1="5" y1="12" x2="19" y2="12"></line>
-                                            </svg></a>
-                                    </div>
-                                    <div class="bottom">
-                                        <a class="cart-plus" href="javascript:void(0);">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20
+                                <a class="cart-minus" href="javascript:void(0);">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-minus">
+                                        <title>Minus</title>
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    </svg>
+                                </a>
+                                <input type="text" class="cart-count-input" name="counts[]" value="1">
+                                <a class="cart-plus" href="javascript:void(0);"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="20" height="20
                                  " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="feather feather-plus">
-                                                <title>Plus</title>
-                                                <line x1="12" y1="5" x2="12" y2="19"></line>
-                                                <line x1="5" y1="12" x2="19" y2="12"></line>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="count-right">
-                                    <input type="text" class="cart-count-input" name="counts[]" value="01">
-                                </div>
+                                        stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus">
+                                        <title>Plus</title>
+                                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    </svg></a>
+
                             </div>
                         </div>
                         <div class="accordion-details">

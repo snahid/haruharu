@@ -398,7 +398,8 @@ a:visited {
 .best-seller .title h3 {
   color: black;
   margin-bottom: 0;
-  font-size: 23px;
+  font-size: 30px;
+  text-transform: uppercase;
 }
 .best-seller .title a {
   color: black;
@@ -541,7 +542,8 @@ a:visited {
 .shop-by .title h3 {
   color: black;
   margin-bottom: 0;
-  font-size: 23px;
+  font-size: 30px;
+  text-transform: uppercase;
 }
 .shop-by .shop-by-wrapper h5 {
   margin-bottom: 30px;
@@ -611,13 +613,14 @@ a:visited {
   margin-top: 50px;
 }
 .black-rice .title {
-  text-align: center;
-  margin-bottom: 30px;
+  text-align: left;
+  margin-bottom: 0px;
 }
 .black-rice .title h3 {
   color: black;
   margin-bottom: 0;
-  font-size: 23px;
+  font-size: 30px;
+  text-transform: uppercase;
 }
 .black-rice .black-rice-wrapper {
   display: flex;
@@ -663,6 +666,16 @@ a:visited {
   margin-bottom: 50px;
   padding-bottom: 50px;
   background-color: rgba(242, 242, 242, 0.2);
+}
+.testimonial .title {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.testimonial .title h3 {
+  color: black;
+  margin-bottom: 0;
+  font-size: 30px;
+  text-transform: uppercase;
 }
 .testimonial .testimonial-inner .testimonial-slider .carousel-top-item {
   display: flex;
@@ -1697,26 +1710,31 @@ footer .footer-bottom .left p a:hover {
   border: 1px solid #000;
   border-radius: 15px;
   font-size: 20px;
-  padding: 4px 15px;
+  padding: 18px 15px;
+  position: relative;
 }
-.products-outer-wrapper .products-details-top .right-section .details .buy-cart-count .count .count-left .top a {
-  color: #000;
+.products-outer-wrapper .products-details-top .right-section .details .buy-cart-count .count .cart-plus {
+  position: absolute;
+  left: 15px;
+  top: 0;
+  color: #000000;
 }
-.products-outer-wrapper .products-details-top .right-section .details .buy-cart-count .count .count-left .bottom a {
-  color: #000;
+.products-outer-wrapper .products-details-top .right-section .details .buy-cart-count .count .cart-minus {
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  color: #000000;
 }
-.products-outer-wrapper .products-details-top .right-section .details .buy-cart-count .count .count-right {
-  user-select: none;
-}
-.products-outer-wrapper .products-details-top .right-section .details .buy-cart-count .count .count-right input {
+.products-outer-wrapper .products-details-top .right-section .details .buy-cart-count .count input {
   text-align: center;
   background-color: transparent;
-  max-width: 70px;
+  max-width: 60px;
   border: none;
   box-shadow: none;
   user-select: none;
+  margin-left: 20px;
 }
-.products-outer-wrapper .products-details-top .right-section .details .buy-cart-count .count .count-right input:focus {
+.products-outer-wrapper .products-details-top .right-section .details .buy-cart-count .count input:focus {
   box-shadow: none;
   border: none;
   outline: none;
@@ -2072,61 +2090,64 @@ footer .footer-bottom .left p a:hover {
   justify-content: flex-end;
   width: 30%;
 }
-.header-inner .header-inner-wrapper .header-inner-right ul {
+.header-inner .header-inner-wrapper .header-inner-right .header-rightul {
   margin: 0;
   padding: 0;
 }
-.header-inner .header-inner-wrapper .header-inner-right ul li {
+.header-inner .header-inner-wrapper .header-inner-right .header-rightul li {
   list-style: none;
   display: inline-block;
   margin: 0 7px;
 }
-.header-inner .header-inner-wrapper .header-inner-right ul li:first-child {
+.header-inner .header-inner-wrapper .header-inner-right .header-rightul li:first-child {
   margin-left: 0;
 }
-.header-inner .header-inner-wrapper .header-inner-right ul li:last-child {
+.header-inner .header-inner-wrapper .header-inner-right .header-rightul li:nth-child(2) {
+  padding-top: 5px;
+}
+.header-inner .header-inner-wrapper .header-inner-right .header-rightul li:last-child {
   margin-right: 0;
 }
-.header-inner .header-inner-wrapper .header-inner-right ul li form .formgroup {
+.header-inner .header-inner-wrapper .header-inner-right .header-rightul li form .formgroup {
   position: relative;
   color: #000;
   cursor: text;
   border-bottom: 1px solid #000;
 }
-.header-inner .header-inner-wrapper .header-inner-right ul li form .formgroup input {
+.header-inner .header-inner-wrapper .header-inner-right .header-rightul li form .formgroup input {
   box-shadow: none;
   border: none;
   background-color: transparent;
-  max-width: 115px;
+  max-width: 130px;
 }
-.header-inner .header-inner-wrapper .header-inner-right ul li form .formgroup input:focus {
+.header-inner .header-inner-wrapper .header-inner-right .header-rightul li form .formgroup input:focus {
   outline: none;
   box-shadow: none;
   border: none;
 }
-.header-inner .header-inner-wrapper .header-inner-right ul li a {
+.header-inner .header-inner-wrapper .header-inner-right .header-rightul li a {
   color: #000000;
   font-size: 18px;
 }
-.header-inner .header-inner-wrapper .header-inner-right ul li .dropdown button {
+.header-inner .header-inner-wrapper .header-inner-right .header-rightul li .dropdown button {
   background-color: transparent;
   padding: 0;
   border: none;
 }
-.header-inner .header-inner-wrapper .header-inner-right ul li .dropdown button::after {
+.header-inner .header-inner-wrapper .header-inner-right .header-rightul li .dropdown button::after {
   display: none;
 }
-.header-inner .header-inner-wrapper .header-inner-right ul li .dropdown ul li {
+.header-inner .header-inner-wrapper .header-inner-right .header-rightul li .dropdown ul li {
   width: 100%;
   margin: 0;
 }
-.header-inner .header-inner-wrapper .header-inner-right ul li .dropdown ul li a:hover {
+.header-inner .header-inner-wrapper .header-inner-right .header-rightul li .dropdown ul li a:hover {
   border-radius: 0.375em;
 }
-.header-inner .header-inner-wrapper .header-inner-right ul .favorite-li {
+.header-inner .header-inner-wrapper .header-inner-right .header-rightul .favorite-li {
   position: relative;
 }
-.header-inner .header-inner-wrapper .header-inner-right ul .favorite-li div {
+.header-inner .header-inner-wrapper .header-inner-right .header-rightul .favorite-li div {
   background-color: #000000;
   width: 8px;
   height: 8px;

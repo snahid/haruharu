@@ -155,40 +155,35 @@
                         border: 1px solid #000;
                         border-radius: 15px;
                         font-size: 20px;
-                        padding: 4px 15px;
+                        padding: 18px 15px;
+                        position: relative;
 
-                        .count-left {
-                            .top {
-                                a {
-                                    color: #000;
-                                }
+                            .cart-plus{
+                                position: absolute;
+                                left: 15px;
+                                top: 0;
+                                color: #000000;
                             }
-
-                            .bottom {
-                                a {
-                                    color: #000;
-                                }
+                            .cart-minus{
+                                position: absolute;
+                                bottom: 0;
+                                left: 15px;
+                                color: #000000;
                             }
-                        }
-
-                        .count-right {
-                            user-select: none;
-
-                            input {
+                            input{
                                 text-align: center;
                                 background-color: transparent;
-                                max-width: 70px;
+                                max-width: 60px;
                                 border: none;
                                 box-shadow: none;
                                 user-select: none;
-
+                                margin-left: 20px;
                                 &:focus {
                                     box-shadow: none;
                                     border: none;
                                     outline: none;
                                 }
                             }
-                        }
                     }
                 }
 
@@ -623,7 +618,7 @@
             display: flex;
             justify-content: flex-end;
             width: 30%;
-            ul {
+            .header-rightul {
                 margin: 0;
                 padding: 0;
 
@@ -634,6 +629,9 @@
 
                     &:first-child {
                         margin-left: 0;
+                    }
+                    &:nth-child(2){
+                        padding-top: 5px;
                     }
 
                     &:last-child {
@@ -651,7 +649,7 @@
                                 box-shadow: none;
                                 border: none;
                                 background-color: transparent;
-                                max-width: 115px;
+                                max-width: 130px;
 
                                 &:focus {
                                     outline: none;
