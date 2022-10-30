@@ -1,0 +1,165 @@
+.shopping-cart-wrapper {
+    margin-top: 150px;
+    margin-bottom: 100px;
+
+    .title {
+        h1 {
+            text-align: center;
+            color: #111827;
+            margin-bottom: 30px;
+        }
+    }
+
+    .product-top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 1px solid #707173;
+
+        p {
+            color: #707173;
+            font-size: 17px;
+            font-weight: 500;
+        }
+
+        .product-title {
+            width: 60%;
+        }
+
+        .price-title {
+            width: 10%;
+        }
+
+        .quantity-title {
+            text-align: center;
+            width: 130px;
+        }
+
+        .total-title {
+            width: 10%;
+            text-align: right;
+        }
+    }
+
+    .shopping-cart-inner {
+        .shopping-cart-box {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 25px 0;
+            border-bottom: 1px solid #707173;
+            &:last-child{
+                border-bottom: 0px solid transparent;
+            }
+
+            .product {
+                width: 60%;
+                display: flex;
+                flex-direction: row;
+
+                .product-img {
+                    max-width: 100px;
+                    margin-right: 15px;
+
+                    a {
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .product-name {
+                    a {
+                        text-decoration: none;
+                        color: #000;
+                    }
+                }
+            }
+
+            .price {
+                width: 10%;
+
+                h5 {
+                    color: #707173;
+                    font-weight: normal;
+                }
+            }
+
+            .quantity {
+                width: 130px;
+
+                .cart-product-count {
+                    border: 1px solid #707173;
+                    border-radius: 5px;
+                    display: flex;
+                    flex-direction: row;
+                    padding: 10px;
+
+                    a {
+                        color: #000;
+                    }
+
+                    input {
+                        text-align: center;
+                        background-color: transparent;
+                        max-width: 70px;
+                        border: none;
+
+                        &:focus {
+                            border: none;
+                            box-shadow: none;
+                            outline: none;
+                        }
+                    }
+                }
+
+                .quantity-bottom {
+                    margin-top: 5px;
+                    a {
+                        text-align: center;
+                        color: #000;
+                        display: block;
+                    }
+                }
+            }
+
+            .total {
+                width: 10%;
+                text-align: right;
+                h5{
+                    color: #707173;
+                    font-weight: normal;
+                }
+            }
+        }
+        .subtotal-wrapper{
+            margin-top: 15px;
+            text-align: right;
+            h3{
+                color: #111827;
+                margin-bottom: 25px;
+            }
+            p{
+                color: #707173;
+                font-size: 17px;
+                margin-bottom: 25px;
+            }
+            a{
+                transition: 0.3s;
+                background: #212b36;
+                border: 1.5px solid #212b36;
+                color: #fff;
+                text-transform: uppercase;
+                padding: 12px 50px;
+                font-size: 18px;
+                border-radius: 3px;
+
+                &:hover {
+                    background-color: #AB6857;
+                    color: #fff;
+                    border-color: #AB6857;
+                }
+            }
+        }
+    }
+}

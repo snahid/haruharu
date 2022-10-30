@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>ACCOUNT :: HARUHARU</title>
+    <title>CART :: HARUHARU</title>
     <!-- FavIcon-->
     <link rel="shortcut icon" type="image/png" href="./assets/HomePage/favicon.webp" />
     <!-- Bootstrap  -->
@@ -26,14 +26,15 @@
     <!--Animate css-->
     <!-- <link rel="stylesheet" href="css/animate.min.css" /> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./css/simple-lightbox.css">
     <!-- Custom Style  -->
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body>
+<body class="product-details">
     <div class="preheader">
         <div class="container-fluid">
-            <p>Free shipping on US order $50+</p>
+            <p>FREE SHIPPING ABOVE `1999</p>
         </div>
     </div>
     <div class="header-banner-section about-header-section">
@@ -41,104 +42,48 @@
             <div class="header">
                 <div class="container-fluid">
                     <div class="header-inner-wrapper">
-                        <div class="logo">
-                            <a href="./index.html"><img src="./assets/HomePage/whitelogo_haruharu_380x.webp"
-                                    class="white-logo" alt="" /></a>
-                            <a href="./index.html"><img class="black-logo" src="./assets/HomePage/black-logo.avif"
-                                    alt="" /></a>
-                        </div>
-                        <div class="menu">
+                        <div class="header-inner-left">
                             <ul>
-                                <li class="about-hovermenu">
-                                    <a href="javascript:void(0);">About</a>
-                                    <div class="about-megamenu">
-                                        <div class="megamenu">
-                                            <ul>
-                                                <li><a href="./about.html">Abut us</a></li>
-                                                <li><a href="./our-mission.html">Our Mission</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="hovermenu">
-                                    <a href="javascript:void(0);">Skincare</a>
-                                    <div class="megamenu-wrapper">
-                                        <div class="megamenu">
-                                            <ul>
-                                                <li><a class="allproducts" href="./all-products.html">All Products</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="megamenu">
-                                            <ul>
-                                                <li><a class="type-color" href="#">By Product types</a></li>
-                                                <li><a href="#">Cleanser</a></li>
-                                                <li><a href="#">Toner/Mist</a></li>
-                                                <li><a href="#">Serum/Ampoule/Essence/Oil</a></li>
-                                                <li><a href="#">Cream/Eye Cream</a></li>
-                                                <li><a href="#">Special</a></li>
-                                                <li><a href="#">SET</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="megamenu">
-                                            <ul>
-                                                <li><a class="type-color" href="#">By Skin Concerns</a></li>
-                                                <li><a href="#">Well-Aging</a></li>
-                                                <li><a href="#">Moisturizing</a></li>
-                                                <li><a href="#">Brightening</a></li>
-                                                <li><a href="#">Soothing</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="megamenu">
-                                            <a href="./black-rice.html">
-                                                <img src="./assets/HomePage/black-rice-menu.webp" alt="">
-                                                <p>Fermented Black Rice Line</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li><a href="#">Affiliates</a></li>
+                                <li><a href="#">Shop</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Press</a></li>
                             </ul>
                         </div>
-                        <div class="account">
-                            <ul class="headerul">
-                                <li id="accountlink">
-                                    <a class="" href="#">Account</a>
+                        <div class="header-inner-center">
+                            <a href="./index.html"><img src="./assets/HomePage/black-logo.avif" alt=""></a>
+                        </div>
+                        <div class="header-inner-right">
+                            <ul class="header-rightul">
+                                <li>
+                                    <!-- Search-form  -->
+                                    <form action="">
+                                        <div class="formgroup">
+                                            <i class="fa fa-search" aria-hidden="true"></i>
+                                            <input name="search" placeholder="Search here..." class="search" id="search" type="search" />
+                                        </div>
+
+                                    </form>
+                                    <!-- Search-form  -->
+
                                 </li>
-                                <li id="accountlink">
-                                    <a data-bs-toggle="modal" href="#exampleModalToggle"><span>Search</span>
-                                        <span>
-                                            <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                <g transform="translate(3.000000, 3.000000)" stroke="currentColor"
-                                                    stroke-width="1.5" fill="none" fill-rule="evenodd">
-                                                    <circle cx="7.82352941" cy="7.82352941" r="7.82352941"></circle>
-                                                    <line x1="13.9705882" y1="13.9705882" x2="18.4411765"
-                                                        y2="18.4411765" stroke-linecap="square"></line>
-                                                </g>
-                                            </svg></span>
-                                    </a>
-                                </li>
-                                <li id="accountlink">
-                                    <a href="#offcanvasRight" data-bs-toggle="offcanvas"
-                                        data-bs-target="#offcanvasRight"
-                                        aria-controls="offcanvasRight"><span>Cart</span>
-                                        <span>
-                                            <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                                    <polygon stroke="currentColor" stroke-width="1.5"
-                                                        points="2 9.25 22 9.25 18 21.25 6 21.25"></polygon>
-                                                    <line x1="12" y1="9" x2="12" y2="3" stroke="currentColor"
-                                                        stroke-width="1.5" stroke-linecap="square"></line>
-                                                </g>
-                                            </svg></span>
-                                    </a>
+                                <li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                                <li class="favorite-li"><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i> <div></div></a></li>
+                                <li>
+                                    <div class="dropdown">
+                                        <button class="btn btn-secondary dropdown-toggle" type="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            <img src="./assets/HomePage/Ellipse.png" alt="">
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                                        </ul>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -146,38 +91,121 @@
     </div>
 
 
-    <!-- Login  -->
-    <div class="login-register-wrapper login-container">
+    <!-- Shopping  Cart  -->
+    <div class="shopping-cart-wrapper">
         <div class="container">
-            <div class="login-register-inner">
-                <div class="title">
-                    <h3>Login</h3>
+            <div class="title">
+                <h1>Shopping Cart</h1>
+            </div>
+            <div class="product-top">
+                <p class="product-title">Product</p>
+                <p class="price-title">Price</p>
+                <p class="quantity-title">Quantity</p>
+                <p class="total-title">Total</p>
+            </div>
+            <div class="shopping-cart-inner">
+                <!-- Shopping Box  -->
+                <div class="shopping-cart-box">
+                    <div class="product">
+                        <div class="product-img">
+                            <a href="#"><img src="./assets/HomePage/best-seller4.jpg" alt=""></a>
+                        </div>
+                        <div class="product-name">
+                            <a href="#">[FREE GIFT] Black Rice Hyaluronic Toner, 0.4 fl.oz. (13ml)</a>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <h5>$10.00</h5>
+                    </div>
+                    <div class="quantity">
+                        <div class="cart-product-count">
+                            <a class="cart-minus" href="javascript:void(0);">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-minus">
+                                    <title>Minus</title>
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                            </a>
+                            <input type="text" class="cart-count-input" name="counts[]" value="1">
+                            <a class="cart-plus" href="javascript:void(0);"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="20" height="20
+                             " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus">
+                                    <title>Plus</title>
+                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg></a>
+                        </div>
+                        <div class="quantity-bottom">
+                            <a class="remove" href="/cart/change?line=1&amp;quantity=0">
+                                Remove
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                              </a>
+                        </div>
+                    </div>
+                    <div class="total">
+                        <h5>$10.00</h5>
+                    </div>
                 </div>
-                <form action="">
-                    <div class="form-group">
-                        <label for="mobile">Mobile</label>
-                        <input type="text" name="mobile" id="mobile" class="form-control">
+                <!-- Shopping Box  -->
+                <div class="shopping-cart-box">
+                    <div class="product">
+                        <div class="product-img">
+                            <a href="#"><img src="./assets/HomePage/best-seller4.jpg" alt=""></a>
+                        </div>
+                        <div class="product-name">
+                            <a href="#">[FREE GIFT] Black Rice Hyaluronic Toner, 0.4 fl.oz. (13ml)</a>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="password" class="form-control">
+                    <div class="price">
+                        <h5>$10.00</h5>
                     </div>
-                    <!-- <div class="forgot-wrapper">
-                        <a class="forgot-password" href="javascript:void(0);">Forgot your password</a>
-                    </div> -->
-                    <div class="submit-wrapper">
-                        <button type="submit" class="btn submitbtn">Sign In</button>
-                        <a href="./register.html">Create account</a>
+                    <div class="quantity">
+                        <div class="cart-product-count">
+                            <a class="cart-minus" href="javascript:void(0);">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-minus">
+                                    <title>Minus</title>
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                            </a>
+                            <input type="text" class="cart-count-input" name="counts[]" value="1">
+                            <a class="cart-plus" href="javascript:void(0);"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="20" height="20
+                             " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus">
+                                    <title>Plus</title>
+                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg></a>
+                        </div>
+                        <div class="quantity-bottom">
+                            <a class="remove" href="/cart/change?line=1&amp;quantity=0">
+                                Remove
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                              </a>
+                        </div>
                     </div>
-                </form>
+                    <div class="total">
+                        <h5>$10.00</h5>
+                    </div>
+                </div>
+                <!-- Shopping Box  -->
+                <!-- Subtotal wrapper  -->
+                <div class="subtotal-wrapper">
+                    <h3>Subtotal: <span>$319.00</span></h3>
+                    <p>Taxes and shipping calculated at checkout</p>
+                    <a href="#">Check Out</a>
+                </div>
+                <!-- Subtotal wrapper  -->
             </div>
         </div>
     </div>
-    <!-- Login  -->
+    <!-- Shopping  Cart  -->
 
-   
-
-   
+ 
 
 
     <!-- Search Modal  -->
@@ -208,10 +236,99 @@
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasRightLabel">Cart</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" title="Close"
+                aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
-            ...
+            <div class="cart-wrapper">
+                <div class="cart-product-wrapper">
+                    <!-- Cart Product Box  -->
+                    <div class="cart-product-box">
+                        <div class="cart-product-img">
+                            <img src="./assets/HomePage/best-seller4.jpg" alt="">
+                        </div>
+                        <div class="cart-product-name-count">
+                            <div class="cart-product-name">
+                                <h6>Black Rice Hyaluronic Toner For Sensitive Skin 5.1 fl.oz. (150 ml)</h6>
+                            </div>
+                            <div class="cart-product-count">
+                                <a class="cart-minus" href="javascript:void(0);">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-minus">
+                                        <title>Minus</title>
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    </svg>
+                                </a>
+                                <input type="text" class="cart-count-input" name="counts[]" value="1">
+                                <a class="cart-plus" href="javascript:void(0);"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="20" height="20
+                                 " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                                        stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus">
+                                        <title>Plus</title>
+                                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    </svg></a>
+                            </div>
+                        </div>
+                        <div class="cart-product-price">
+                            <p>$20.00</p>
+                        </div>
+                        <div class="closebtn">
+                            <button type="button" title="Remove" class="btn-close cart-close"></button>
+                        </div>
+                    </div>
+                    <!-- Cart Product Box  -->
+                    <div class="cart-product-box">
+                        <div class="cart-product-img">
+                            <img src="./assets/HomePage/best-seller4.jpg" alt="">
+                        </div>
+                        <div class="cart-product-name-count">
+                            <div class="cart-product-name">
+                                <h6>Black Rice Hyaluronic Toner For Sensitive Skin 5.1 fl.oz. (150 ml)</h6>
+                            </div>
+                            <div class="cart-product-count">
+                                <a class="cart-minus" href="javascript:void(0);">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-minus">
+                                        <title>Minus</title>
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    </svg>
+                                </a>
+                                <input type="text" class="cart-count-input" name="counts[]" value="1">
+                                <a class="cart-plus" href="javascript:void(0);"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="20" height="20
+                                 " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                                        stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus">
+                                        <title>Plus</title>
+                                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    </svg></a>
+                            </div>
+                        </div>
+                        <div class="cart-product-price">
+                            <p>$20.00</p>
+                        </div>
+                        <div class="closebtn">
+                            <button type="button" title="Remove" class="btn-close cart-close"></button>
+                        </div>
+                    </div>
+                    <!-- Cart Product Box  -->
+                </div>
+                <!-- Subtotal and Checkout  -->
+                <div class="subtotal-and-checkout">
+                    <div class="subtotal">
+                        <h5>Subtotal</h5>
+                        <p>$20.00</p>
+                    </div>
+                    <div class="checkout">
+                        <p>Taxes and shipping calculated at checkout</p>
+                        <a href="#">Checkout</a>
+                    </div>
+                </div>
+                <!-- Subtotal and Checkout  -->
+            </div>
         </div>
     </div>
     <!-- Cart Canvas  -->
@@ -471,6 +588,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!--Owl Carouse js-->
     <script src="js/owl.carousel.min.js"></script>
+    <script src="./js/simple-lightbox.js"></script>
     <!-- Custom Js-->
     <script src="js/custom.js"></script>
 </body>

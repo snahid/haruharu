@@ -448,19 +448,19 @@ $(".cart-close").click(function(){
 });
 
 $(".cart-minus").click(function(){
-    var currentVal = parseInt($(".cart-count-input").val());
+    var currentVal = parseInt($(this).next(".cart-count-input").val());
     if (currentVal != NaN && currentVal > 0)
     {
         if(currentVal == 1){
             return;
         }else{
-            $(".cart-count-input").val(currentVal - 1);
+            $(this).next(".cart-count-input").val(currentVal - 1);
         }
     }
 });
 
 $(".cart-plus").click(function(){
-    var currentVal = parseInt($(".cart-count-input").val());
+    var currentVal = parseInt($(this).prev(".cart-count-input").val());
     if (currentVal != NaN)
     {
         $(this).prev(".cart-count-input").val(currentVal + 1);
