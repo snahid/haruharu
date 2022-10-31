@@ -97,13 +97,13 @@
 // }
 
 // // number or not check//
-// function isNumberKey(evt) {
-//   var charCode = evt.which ? evt.which : evt.keyCode;
-//   if (charCode != 46 && charCode > 31 && (charCode < 48 || charCode > 57))
-//     return false;
+function isNumberKey(evt) {
+  var charCode = evt.which ? evt.which : evt.keyCode;
+  if (charCode != 46 && charCode > 31 && (charCode < 48 || charCode > 57))
+    return false;
 
-//   return true;
-// }
+  return true;
+}
 // // number or not check//
 
 // const prevIcon = '<i class="fa fa-chevron-left" aria-hidden="true"></i>';
