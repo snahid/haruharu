@@ -2035,7 +2035,7 @@ footer .footer-bottom .left p a:hover {
 }
 
 .product-details {
-  background-color: #E0DBD4;
+  background-color: #e0dbd4;
 }
 
 .products-outer-wrapper {
@@ -2046,7 +2046,7 @@ footer .footer-bottom .left p a:hover {
   max-width: 90%;
 }
 .products-outer-wrapper .products-details-top {
-  background-color: #DAD7CD;
+  background-color: #dad7cd;
   border: 5px solid #ffffff;
   border-radius: 40px;
   display: flex;
@@ -2102,7 +2102,7 @@ footer .footer-bottom .left p a:hover {
   margin-bottom: 15px;
 }
 .products-outer-wrapper .products-details-top .right-section .price-review .review .review-star i {
-  color: #C2B2B8;
+  color: #c2b2b8;
   font-size: 30px;
 }
 .products-outer-wrapper .products-details-top .right-section .details p {
@@ -2228,8 +2228,8 @@ footer .footer-bottom .left p a:hover {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background: #DAD7CD;
-  border: 5px solid #FFFFFF;
+  background: #dad7cd;
+  border: 5px solid #ffffff;
   border-radius: 40px;
   margin-top: 50px;
 }
@@ -2243,7 +2243,7 @@ footer .footer-bottom .left p a:hover {
   font-weight: 600;
   font-size: 48px;
   line-height: 72px;
-  color: #C2B2B8;
+  color: #c2b2b8;
 }
 .products-outer-wrapper .makeover-wrapper .makeover-left .makeover-details {
   padding-top: 16px;
@@ -2299,7 +2299,7 @@ footer .footer-bottom .left p a:hover {
   border: 5px solid #ffffff;
 }
 .products-outer-wrapper .makeover-second-wrapper .makeover-right {
-  background: #DAD7CD;
+  background: #dad7cd;
   width: 100%;
   height: 100%;
   text-align: center;
@@ -2314,7 +2314,7 @@ footer .footer-bottom .left p a:hover {
   font-weight: 600;
   font-size: 48px;
   line-height: 72px;
-  color: #C2B2B8;
+  color: #c2b2b8;
   margin-bottom: 20px;
 }
 .products-outer-wrapper .makeover-second-wrapper .makeover-right h4 {
@@ -2363,12 +2363,12 @@ footer .footer-bottom .left p a:hover {
   color: #000000;
   text-align: center;
   transform: translateX(-50%);
-  background: #DAD7CD;
+  background: #dad7cd;
 }
 .products-outer-wrapper .review-section-wrapper {
   border: 3px solid #ffffff;
   border-radius: 40px;
-  background: #DAD7CD;
+  background: #dad7cd;
   padding-top: 50px;
   padding-bottom: 100px;
 }
@@ -2398,11 +2398,11 @@ footer .footer-bottom .left p a:hover {
   margin-right: 20px;
 }
 .products-outer-wrapper .review-section-wrapper .review-top .review .review-star i {
-  color: #C2B2B8;
+  color: #c2b2b8;
   font-size: 30px;
 }
 .products-outer-wrapper .review-section-wrapper .review-top .review .review-star .fill {
-  color: #C2B2B8;
+  color: #c2b2b8;
 }
 .products-outer-wrapper .review-section-wrapper .review-top .review .review-count {
   color: rgba(0, 0, 0, 0.8);
@@ -2413,6 +2413,92 @@ footer .footer-bottom .left p a:hover {
   margin-top: 70px;
 }
 .products-outer-wrapper .review-section-wrapper .review-top .comment-review a {
+  background: #000000;
+  border-radius: 15px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 21px 34px;
+}
+.products-outer-wrapper .review-section-wrapper .review-top .comment-review .comment-add-wrapper {
+  margin-top: 50px;
+}
+.products-outer-wrapper .review-section-wrapper .review-top .comment-review .comment-add-wrapper .comment-form form {
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.products-outer-wrapper .review-section-wrapper .review-top .comment-review .comment-add-wrapper .comment-form form .form-group {
+  margin-bottom: 15px;
+}
+.products-outer-wrapper .review-section-wrapper .review-top .comment-review .comment-add-wrapper .comment-form form .form-group input {
+  border: 1px solid rgba(112, 113, 115, 0.3);
+}
+.products-outer-wrapper .review-section-wrapper .review-top .comment-review .comment-add-wrapper .comment-form form .form-group input:focus {
+  box-shadow: none;
+  border-color: #707173;
+}
+.products-outer-wrapper .review-section-wrapper .review-top .comment-review .comment-add-wrapper .comment-form form .form-group textarea {
+  resize: none;
+  border-radius: 0.375rem;
+  border: 1px solid rgba(112, 113, 115, 0.3);
+}
+.products-outer-wrapper .review-section-wrapper .review-top .comment-review .comment-add-wrapper .comment-form form .form-group textarea:focus {
+  box-shadow: none;
+  border-color: #707173;
+}
+.products-outer-wrapper .review-section-wrapper .review-top .comment-review .comment-add-wrapper .comment-form form .form-group .rate {
+  float: left;
+  height: 46px;
+  padding: 0 10px;
+}
+.products-outer-wrapper .review-section-wrapper .review-top .comment-review .comment-add-wrapper .comment-form form .form-group .rate:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+}
+.products-outer-wrapper .review-section-wrapper .review-top .comment-review .comment-add-wrapper .comment-form form .form-group .rate:not(:checked) > label {
+  font-size: 40px;
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.2);
+}
+.products-outer-wrapper .review-section-wrapper .review-top .comment-review .comment-add-wrapper .comment-form form .form-group .rate:not(:checked) > label:before {
+  content: "★ ";
+}
+.products-outer-wrapper .review-section-wrapper .review-top .comment-review .comment-add-wrapper .comment-form form .form-group .rate > input:checked ~ label {
+  color: #d880a1;
+}
+.products-outer-wrapper .review-section-wrapper .review-top .comment-review .comment-add-wrapper .comment-form form .form-group .rate:not(:checked) > label:hover,
+.products-outer-wrapper .review-section-wrapper .review-top .comment-review .comment-add-wrapper .comment-form form .form-group .rate:not(:checked) > label:hover ~ label {
+  color: #d880a1;
+}
+.products-outer-wrapper .review-section-wrapper .review-top .comment-review .comment-add-wrapper .comment-form form .form-group .rate > input:checked + label:hover,
+.products-outer-wrapper .review-section-wrapper .review-top .comment-review .comment-add-wrapper .comment-form form .form-group .rate > input:checked + label:hover ~ label,
+.products-outer-wrapper .review-section-wrapper .review-top .comment-review .comment-add-wrapper .comment-form form .form-group .rate > input:checked ~ label:hover,
+.products-outer-wrapper .review-section-wrapper .review-top .comment-review .comment-add-wrapper .comment-form form .form-group .rate > input:checked ~ label:hover ~ label,
+.products-outer-wrapper .review-section-wrapper .review-top .comment-review .comment-add-wrapper .comment-form form .form-group .rate > label:hover ~ input:checked ~ label {
+  color: #d880a1;
+}
+.products-outer-wrapper .review-section-wrapper .review-top .comment-review .comment-add-wrapper .comment-form form .ratings-wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  position: relative;
+}
+.products-outer-wrapper .review-section-wrapper .review-top .comment-review .comment-add-wrapper .comment-form form .ratings-wrapper .rate {
+  position: absolute;
+  left: 0;
+  top: 25px;
+  padding: 0;
+}
+.products-outer-wrapper .review-section-wrapper .review-top .comment-review .comment-add-wrapper .comment-form form .submit-wrapper {
+  margin-top: 70px;
+}
+.products-outer-wrapper .review-section-wrapper .review-top .comment-review .comment-add-wrapper .comment-form form .submit-wrapper button {
   background: #000000;
   border-radius: 15px;
   color: #ffffff;
@@ -2439,7 +2525,7 @@ footer .footer-bottom .left p a:hover {
 }
 .products-outer-wrapper .review-section-wrapper .review-top .comment-wrapper .comments-box .review-star-wrapper .review-star i {
   font-size: 30px;
-  color: #C2B2B8;
+  color: #c2b2b8;
 }
 .products-outer-wrapper .review-section-wrapper .review-top .comment-wrapper .comments-box h6 {
   color: rgba(0, 0, 0, 0.7);
