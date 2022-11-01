@@ -24,12 +24,12 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css" />
     <!--AOS css-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script src="./js/zoomy.js"></script>
-    <link rel="stylesheet" href="./css/zoomy.css" />
+    <!-- <script src="./js/zoomy.js"></script> -->
+    <!-- <link rel="stylesheet" href="./css/zoomy.css" /> -->
     <!--Animate css-->
     <!-- <link rel="stylesheet" href="css/animate.min.css" /> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="./css/simple-lightbox.css" />
+    <!-- <link rel="stylesheet" href="./css/simple-lightbox.css" /> -->
     <!-- Custom Style  -->
     <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -96,323 +96,182 @@
         </div>
     </div>
 
-    <div class="products-outer-wrapper">
+    <!-- Product List  -->
+    <div class="product-list">
         <div class="container-fluid">
-            <div class="products-details-top">
-                <div class="left-section">
-                    <!-- <div class="bigimage gallery">
-                        <a href="./assets/HomePage/product-details-big.png"><img
-                                src="./assets/HomePage/product-details-big.png" alt="" /></a>
-                    </div>
-                    <div class="smallimage gallery">
-                        <a href="./assets/HomePage/best-seller4.jpg"><img src="./assets/HomePage/best-seller4.jpg"
-                                alt="" /></a>
-
-                        <a href="./assets/HomePage/product-details-big.png"><img
-                                src="./assets/HomePage/product-details-big.png" alt="" /></a>
-
-                        <a href="./assets/HomePage/best-seller4.jpg"><img src="./assets/HomePage/best-seller4.jpg"
-                                alt="" /></a>
-                    </div> -->
-                    <div id="el"></div>
-                </div>
-                <div class="right-section">
-                    <h2 class="product-name">Black Rice hyaluronic cream (150 ml)</h2>
-                    <ul>
-                        <li>
-                            <p>The dewy hydration layer</p>
-                        </li>
-                    </ul>
-                    <div class="price-review">
-                        <div class="review">
-                            <span class="review-star">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="details">
-                        <p>
-                            Reveal smooth and clean skin with this Black Rice Moisture Deep
-                            Cleansing Oil Makeup Remover. It instantly dissolves makeup,
-                            dirt, and oil to leave behind moisturised and squeaky-clean
-                            skin.
-                        </p>
-                        <h3 class="price">Rs.2400</h3>
-                        <div class="buy-cart-count">
-                            <a href="#" class="buy-now">Buy Now</a>
-                            <a href="#" class="Add-to-Cart">Add to Cart</a>
-                            <div class="count">
-                                <a class="cart-minus" href="javascript:void(0);">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
-                                        stroke-linejoin="round" class="feather feather-minus">
-                                        <title>Minus</title>
-                                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                                    </svg>
+           <div class="product-list-inner">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="product-list-box">
+                        <div class="best-seller-box">
+                            <div class="best-seller-top">
+                                <div class="best-seller-img">
+                                    <img src="./assets/ProductList/product-list-1.png" alt="" />
+                                </div>
+                                <div class="best-seller-slider">
+                                    <div class="best-slider">
+                                        <div class="owl-carousel owl-theme bestsellerslider1">
+                                            <div class="item">
+                                                <a href="#">
+                                                    <img src="./assets/HomePage/best-seller2.webp" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <img src="./assets/ProductList/product-list-1.png" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <img src="./assets/HomePage/best-seller2.webp" alt="" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="best-seller-details">
+                                <a href="#">
+                                    <p>Black rice hyaluronic cream</p>
+                                    <span>Delivers internse hydration | All skin types</span>
+                                    <h6>Rs.2999</h6>
+                                    <button class="addtocartbtn">Add to cart</button>
                                 </a>
-                                <input type="text" class="cart-count-input" name="counts[]" value="1" />
-                                <a class="cart-plus" href="javascript:void(0);"><svg xmlns="http://www.w3.org/2000/svg"
-                                        width="20" height="20
-                                 " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
-                                        stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus">
-                                        <title>Plus</title>
-                                        <line x1="12" y1="5" x2="12" y2="19"></line>
-                                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                                    </svg></a>
                             </div>
                         </div>
-                        <div class="accordion-details">
-                            <div class="accordion accordion-flush" id="accordionFlushExample">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-headingOne">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
-                                            aria-expanded="false" aria-controls="flush-collapseOne">
-                                            Reasons WHY It's `wonder`ful
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseOne" class="accordion-collapse collapse"
-                                        aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">
-                                            Placeholder content for this accordion, which is
-                                            intended to demonstrate the
-                                            <code>.accordion-flush</code> class. This is the first
-                                            item's accordion body.
-                                        </div>
-                                    </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="product-list-box">
+                        <div class="best-seller-box">
+                            <div class="best-seller-top">
+                                <div class="best-seller-img">
+                                    <img src="./assets/ProductList/product-list-3.png" alt="" />
                                 </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-headingTwo">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
-                                            aria-expanded="false" aria-controls="flush-collapseTwo">
-                                            APPLICATION
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                                        aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">
-                                            Placeholder content for this accordion, which is
-                                            intended to demonstrate the
-                                            <code>.accordion-flush</code> class. This is the second
-                                            item's accordion body. Let's imagine this being filled
-                                            with some actual content.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-headingThree">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
-                                            aria-expanded="false" aria-controls="flush-collapseThree">
-                                            PRODUCT DETAILS
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseThree" class="accordion-collapse collapse"
-                                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">
-                                            Placeholder content for this accordion, which is
-                                            intended to demonstrate the
-                                            <code>.accordion-flush</code> class. This is the third
-                                            item's accordion body. Nothing more exciting happening
-                                            here in terms of content, but just filling up the space
-                                            to make it look, at least at first glance, a bit more
-                                            representative of how this would look in a real-world
-                                            application.
+                                <div class="best-seller-slider">
+                                    <div class="best-slider">
+                                        <div class="owl-carousel owl-theme bestsellerslider1">
+                                            <div class="item">
+                                                <a href="#">
+                                                    <img src="./assets/HomePage/best-seller2.webp" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <img src="./assets/ProductList/product-list-3.png" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <img src="./assets/HomePage/best-seller2.webp" alt="" />
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="makeover-wrapper makeover-first">
-                <div class="makeover-left">
-                    <h3>Effortlessly remove makeup in a swipe.</h3>
-                    <div class="makeover-details">
-                        <div class="details-left">
-                            <p>Good For:</p>
-                        </div>
-                        <div class="details-right">
-                            <p>All skin types</p>
-                        </div>
-                    </div>
-                    <div class="makeover-details">
-                        <div class="details-left">
-                            <p>Feels Like:</p>
-                        </div>
-                        <div class="details-right">
-                            <p>Cleansed and moisturised</p>
-                        </div>
-                    </div>
-                    <div class="makeover-details">
-                        <div class="details-left">
-                            <p>Smells Like:</p>
-                        </div>
-                        <div class="details-right">
-                            <p>Rejuvenated</p>
-                        </div>
-                    </div>
-                    <div class="makeover-details">
-                        <div class="details-left">
-                            <p>Free From:</p>
-                        </div>
-                        <div class="details-right">
-                            <p>Parabens, alchol, artificial fragrances & colourants</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="makeover-right">
-                    <img src="./assets/HomePage/best-seller4.jpg" alt="" />
-                </div>
-            </div>
-            <div class="makeover-wrapper makeover-second-wrapper">
-                <div class="makeover-left">
-                    <img src="./assets/HomePage/best-seller4.jpg" alt="" />
-                </div>
-                <div class="makeover-right">
-                    <h3>macadamia oil</h3>
-                    <h4>black rice</h4>
-                    <h4>olive oil</h4>
-                    <a href="#">Full ingredient list</a>
-                </div>
-            </div>
-            <div class="product-name-highlight">
-                <p>Cleanser</p>
-                <p>Toner</p>
-                <p class="highlight">Niacinamide 10% Serum</p>
-                <p>Moisturizer</p>
-                <p>Sunscreen</p>
-            </div>
-            <div class="review-section-wrapper">
-                <div class="review-top">
-                    <p>Let Us Know</p>
-                    <h3>How you Feel!</h3>
-                    <div class="review">
-                        <span class="review-star">
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                        </span>
-                        <span class="review-count"> 56 reviews </span>
-                    </div>
-                    <div class="comment-review">
-                        <!-- <a href="#" class="leave-preview"></a> -->
-                        <a href="#commentToggleBox" class="leave-preview" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="commentToggleBox">Leave a Preview</a>
-                        <div class="comment-add-wrapper collapse" id="commentToggleBox">
-                            <div class="comment-form">
-                                <form action="">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Add Title">
-                                    </div>
-                                    <div class="form-group">
-                                        <textarea name="" id="" placeholder="Write Your Message here..." class="form-control"  rows="5"></textarea>
-                                    </div>
-                                    <div class="form-group ratings-wrapper">
-                                        <label for="">Give a ratings</label>
-                                        <div class="rate">
-                                            <input type="radio" id="star5" name="rate" value="5" />
-                                            <label for="star5" title="text">5 stars</label>
-                                            <input type="radio" id="star4" name="rate" value="4" />
-                                            <label for="star4" title="text">4 stars</label>
-                                            <input type="radio" id="star3" name="rate" value="3" />
-                                            <label for="star3" title="text">3 stars</label>
-                                            <input type="radio" id="star2" name="rate" value="2" />
-                                            <label for="star2" title="text">2 stars</label>
-                                            <input type="radio" id="star1" name="rate" value="1" />
-                                            <label for="star1" title="text">1 star</label>
-                                          </div>
-                                    </div>
-                                    <div class="submit-wrapper">
-                                        <button type="submit">Add Comments</button>
-                                    </div>
-                                </form>
+                            <div class="best-seller-details">
+                                <a href="#">
+                                    <p>Black rice hyaluronic toner</p>
+                                    <span>Delivers internse hydration | All skin types</span>
+                                    <h6>Rs.2999</h6>
+                                    <button class="addtocartbtn">Add to cart</button>
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <div class="comment-wrapper">
-                        <div class="comments-box">
-                            <div class="review-star-wrapper">
-                                <span class="review-star">
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                </span>
-                            </div>
-                            <h6>My new favorite!!</h6>
-                            <h5>Jessica</h5>
-                            <p>I've been waiting for this. I love this!!:)</p>
-                        </div>
-                        <div class="comments-box">
-                            <div class="review-star-wrapper">
-                                <span class="review-star">
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                </span>
-                            </div>
-                            <h6>My new favorite!!</h6>
-                            <h5>Jessica</h5>
-                            <p>I've been waiting for this. I love this!!:)</p>
-                        </div>
-                        <div class="comments-box">
-                            <div class="review-star-wrapper">
-                                <span class="review-star">
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                </span>
-                            </div>
-                            <h6>My new favorite!!</h6>
-                            <h5>Jessica</h5>
-                            <p>I've been waiting for this. I love this!!:)</p>
-                        </div>
-                    </div>
-                    <div class="mypagination">
-                        <i class="fa fa-dot-circle-o" aria-hidden="true"></i>
-                        <ul>
-                            <li><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                        </ul>
-                        <i class="fa fa-dot-circle-o" aria-hidden="true"></i>
-                    </div>
                 </div>
-            </div>
-            <div class="pair-section">
-                <h2>What you can pair me with</h2>
-                <div class="row">
-                    <div class="pair-image-wrapper">
-                        <div class="pair-box">
-                            <a href="#"><img src="./assets/HomePage/best-seller4.jpg" alt="" /></a>
-                        </div>
-                        <div class="pair-box">
-                            <a href="#"><img src="./assets/HomePage/best-seller4.jpg" alt="" /></a>
-                        </div>
-                        <div class="pair-box">
-                            <a href="#"><img src="./assets/HomePage/best-seller4.jpg" alt="" /></a>
+                <div class="col-md-6">
+                    <div class="product-list-box">
+                        <div class="best-seller-box">
+                            <div class="best-seller-top">
+                                <div class="best-seller-img">
+                                    <img src="./assets/ProductList/product-list-2.png" alt="" />
+                                </div>
+                                <div class="best-seller-slider">
+                                    <div class="best-slider">
+                                        <div class="owl-carousel owl-theme bestsellerslider1">
+                                            <div class="item">
+                                                <a href="#">
+                                                    <img src="./assets/HomePage/best-seller2.webp" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <img src="./assets/ProductList/product-list-2.png" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <img src="./assets/HomePage/best-seller2.webp" alt="" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="best-seller-details">
+                                <a href="#">
+                                    <p>Black rice hyaluronic cream</p>
+                                    <span>Delivers internse hydration | All skin types</span>
+                                    <h6>Rs.2999</h6>
+                                    <button class="addtocartbtn">Add to cart</button>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="col-md-6">
+                    <div class="product-list-box">
+                        <div class="best-seller-box">
+                            <div class="best-seller-top">
+                                <div class="best-seller-img">
+                                    <img src="./assets/ProductList/product-list-3.png" alt="" />
+                                </div>
+                                <div class="best-seller-slider">
+                                    <div class="best-slider">
+                                        <div class="owl-carousel owl-theme bestsellerslider1">
+                                            <div class="item">
+                                                <a href="#">
+                                                    <img src="./assets/HomePage/best-seller2.webp" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <img src="./assets/ProductList/product-list-3.png" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <img src="./assets/HomePage/best-seller2.webp" alt="" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="best-seller-details">
+                                <a href="#">
+                                    <p>Black rice hyaluronic toner</p>
+                                    <span>Delivers internse hydration | All skin types</span>
+                                    <h6>Rs.2999</h6>
+                                    <button class="addtocartbtn">Add to cart</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+           </div>
         </div>
     </div>
+    <!-- Product List  -->
+
+  
 
     <!-- Search Modal  -->
-    <div class="modal fade search-modal" id="exampleModalToggle" aria-hidden="true"
+
+    <!-- <div class="modal fade search-modal" id="exampleModalToggle" aria-hidden="true"
         aria-labelledby="exampleModalToggleLabel" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -434,7 +293,8 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
+
     <!-- Search Modal  -->
 
     <!-- Cart Canvas  -->
@@ -546,7 +406,9 @@
 
     <!-- Footer  -->
     <footer>
-        <div class="container-fluid">
+
+        <!-- <div class="container-fluid">
+
             <div class="footer-top">
                 <div class="footer-top-box">
                     <h3>What makes us ‘wonder’ful?</h3>
@@ -589,9 +451,12 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="divider"></div>
-        <div class="container-fluid">
+
+        </div> -->
+
+        <!-- <div class="divider"></div> -->
+
+        <!-- <div class="container-fluid">
             <div class="footer-bottom">
                 <div class="left">
                     <p>&copy; 2022 <a href="#">haruharu Wonder USA Official.</a></p>
@@ -790,6 +655,52 @@
                     </div>
                 </div>
             </div>
+        </div> -->
+
+
+        <div class="container-fluid">
+            <div class="footer-inner-wrapper">
+                <div class="footer-inner-top">
+                   <div class="footer-top-box">
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Gift cards</a></li>
+                    </ul>
+                   </div>
+                   <div class="footer-top-box">
+                    <ul>
+                        <li><a href="#">Affiliate program</a></li>
+                        <li><a href="#">Track your order</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Shipping & return</a></li>
+                        <li><a href="#">Terms of use</a></li>
+                    </ul>
+                   </div>
+                   <div class="footer-top-box">
+                    <h6>You’ve Got Mail…</h6>
+                    <form action="">
+                        <input type="email" name="email" class="form-control email" placeholder="EMAIL ADDRESS">
+                        <button type="submit"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                    </form>
+                    <p>Only if you want it, though! Subscribe to get early-bird access to new launches, promotions, and all things skincare.
+                    </p>
+                   </div>
+                </div>
+                <div class="footer-inner-bottom">
+                    <div class="social-wrapper">
+                        <h6>Follow us on</h6>
+                        <div class="social">
+                            <a href="#" class="social-insta"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            <a href="#" class="social-twitter-square"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                            <a href="#" class="social-pinterest"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                            <a href="#" class="social-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
     <!-- Footer  -->
@@ -803,30 +714,9 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!--Owl Carouse js-->
     <script src="js/owl.carousel.min.js"></script>
-    <script src="./js/simple-lightbox.js"></script>
+    <!-- <script src="./js/simple-lightbox.js"></script> -->
     <!-- Custom Js-->
     <script src="js/custom.js"></script>
-    <script>
-        // $('.work-details-gallery').lightcase();
-        (function () {
-            var $gallery = new SimpleLightbox(".gallery a", {});
-        })();
-    </script>
-    <script>
-        var urls = [
-            "./assets/HomePage/product-details-big.png",
-            "./assets/HomePage/best-seller4.jpg",
-            "./assets/HomePage/product-details-big.png",
-        ];
-        var options = {
-            // thumbLeft:true,
-            // thumbRight:true,
-            // thumbHide:true,
-            // width:500,
-            // height:500,
-        };
-        $("#el").zoomy(urls, options);
-    </script>
 </body>
 
 </html>
