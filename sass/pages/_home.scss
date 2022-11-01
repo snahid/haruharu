@@ -5,7 +5,7 @@ body {
     margin: 0;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    // font-family: $font;
+    font-family: $karla-font;
 }
 
 a {
@@ -47,9 +47,9 @@ a:visited {
 
     .header-inner {
         z-index: 2;
-        position: absolute;
-        left: 0;
-        top: 0;
+        // position: absolute;
+        // left: 0;
+        // top: 0;
         width: 100%;
 
         .header {
@@ -429,9 +429,12 @@ a:visited {
     .banner {
 
         .carousel {
+
             .carousel-inner {
-                height: calc(100vh - 41px);
+                height: calc(100vh - 137px);
                 overflow: hidden;
+                border-radius: 30px;
+                border: 5px solid $white;
             }
 
             .carousel-item {
@@ -699,6 +702,561 @@ a:visited {
 }
 
 // Best Seller 
+
+// Most loved wonders 
+.most-wonders {
+    margin-top: 70px;
+
+    .most-wonders-inner {
+        .title {
+            h1 {
+                text-align: center;
+                font-weight: 500;
+                font-size: 46px;
+                color: rgba(0, 0, 0, 0.8);
+                margin-bottom: 50px;
+            }
+        }
+
+        .product-list-box {
+            margin-bottom: 50px;
+
+            // padding: 50px;
+            .best-seller-box {
+                position: relative;
+                z-index: 1;
+
+                .best-seller-top {
+                    .best-seller-img {
+                        img {
+                            width: 100%;
+                            // max-height: 500px;
+                            border-radius: 30px;
+                            border: 5px solid #fff;
+                        }
+                    }
+
+                    .best-seller-slider {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        // min-height: 432px;
+                        z-index: -1;
+                        transition: 0.3s;
+                        opacity: 0;
+                        visibility: hidden;
+
+                        .best-slider {
+
+                            .item {
+                                a {
+                                    display: block;
+
+                                    img {
+                                        width: 100%;
+                                        border-radius: 30px;
+                                        border: 5px solid #fff;
+                                        // max-height: 500px;
+                                    }
+                                }
+                            }
+
+                            .owl-nav {
+                                margin-top: 0;
+
+                                .owl-prev {
+                                    position: absolute;
+                                    left: 0;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    background-color: #fff;
+                                    width: 30px;
+                                    height: 30px;
+                                    font-size: 16px;
+                                    color: #707173;
+                                    margin: 0;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    transition: 0.3s;
+                                    opacity: 0.7;
+
+                                    &:hover {
+                                        opacity: 1;
+                                    }
+                                }
+
+                                .owl-next {
+                                    position: absolute;
+                                    right: 0;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    background-color: #fff;
+                                    width: 30px;
+                                    height: 30px;
+                                    font-size: 16px;
+                                    color: #707173;
+                                    margin: 0;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    transition: 0.3s;
+                                    opacity: 0.7;
+
+                                    &:hover {
+                                        opacity: 1;
+                                    }
+                                }
+                            }
+
+                            .quick-buy {
+                                display: block;
+                                position: absolute;
+                                left: 10px;
+                                bottom: 10px;
+                                width: calc(100% - 20px);
+                                background-color: $white;
+                                z-index: 2;
+                                text-align: center;
+                                background-color: $white;
+                                color: #212b36;
+                                border: 1.5px solid rgba(112, 113, 115, 0.15);
+                                text-transform: uppercase;
+                                padding: 9.5px 20px;
+                                font-size: 13px;
+                                border-radius: 3px;
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        .best-seller-slider {
+                            z-index: 2;
+                            visibility: visible;
+                            opacity: 1;
+                        }
+                    }
+                }
+
+                .best-seller-details {
+                    margin-top: 5px;
+
+                    a {
+                        display: block;
+                        text-align: center;
+
+                        p {
+                            font-size: 15px;
+                            margin-bottom: 0px;
+                            font-weight: 400;
+                            font-size: 24px;
+                            // line-height: 50px;
+                            color: rgba(0, 0, 0, 0.8);
+                            margin-top: 15px;
+                        }
+
+                        span {
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 20px;
+                            // line-height: 50px;
+                            color: rgba(0, 0, 0, 0.8);
+                        }
+
+                        h6 {
+                            font-weight: 500;
+                            font-size: 28px;
+                            letter-spacing: 0.05em;
+                            color: rgba(0, 0, 0, 0.8);
+                            margin: 15px 0;
+                        }
+
+                        .addtocartbtn {
+                            background: #DAD7CD;
+                            border: 5px solid #FFFFFF;
+                            border-radius: 30px;
+                            font-weight: 400;
+                            font-size: 24px;
+                            color: rgba(0, 0, 0, 0.8);
+                            padding: 14px 61px;
+                            transition: 0.3s;
+
+                            &:hover {
+                                background-color: #fff;
+
+                            }
+                        }
+                    }
+
+                    .review {
+
+                        font-size: 12px;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        margin-top: 8px;
+
+                        .review-star {
+                            margin-right: 10px;
+
+                            i {
+                                color: #b6a0a6;
+                            }
+                        }
+
+                        .review-count {
+                            font-weight: 500;
+                            color: #707173;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Most loved wonders 
+
+
+// Shop All 
+.shop-all-wrapper {
+    margin-top: 20px;
+
+    .title {
+        h1 {
+            font-weight: 500;
+            font-size: 32px;
+            text-decoration: underline;
+            color: $black;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+    }
+
+    .shop-all-inner {
+        background-image: url(../assets/HomePage/shop-all.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 5px solid $white;
+        border-radius: 40px;
+        text-align: center;
+        padding: 280px 0;
+
+        h1 {
+            font-size: 64px;
+            font-weight: 500;
+            color: $white;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: $white;
+            font-weight: 400;
+            font-size: 32px;
+            margin-bottom: 70px;
+        }
+
+        .tellusmore {
+            a {
+                text-decoration: none;
+                font-size: 32px;
+                font-weight: 400;
+                color: $black;
+                background: #DAD7CD;
+                border: 5px solid #FFFFFF;
+                border-radius: 30px;
+                padding: 23px 48px;
+                transition: 0.3s;
+
+                &:hover {
+                    background-color: $white;
+                }
+            }
+        }
+    }
+}
+
+// Shop All 
+
+// Meet wonderful 
+.meet-wonderful {
+    margin: 70px 0;
+    .meet-wonderful-inner{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        .meet-wonderful-left{
+            width: 50%;
+            padding: 0 12px;
+            &::after{
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: calc(50% - 12px);
+                height: 100%;
+                border: 5px solid $white;
+                border-radius: 40px;
+                content: "";
+                background: #DAD7CD;
+                z-index: -1;
+                margin-right: 12px;
+            }
+            .wonderful-box-one{
+                padding: 0 50px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                border: 0px solid transparent !important;
+                margin-right: 20px;
+            }
+        }
+        .meet-wonderful-right{
+            width: 50%;
+            padding: 0 12px;
+        }
+    }
+    .meet-wonderful-box {
+        background: #DAD7CD;
+        border: 5px solid #FFFFFF;
+        border-radius: 40px;
+        min-height: 700px;
+        overflow: hidden;
+        h3 {
+            font-weight: 500;
+            font-size: 46px;
+            color: rgba(0, 0, 0, 0.8);
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 28px;
+            color: rgba(0, 0, 0, 0.8);
+        }
+
+        .tellusmore {
+            margin-top: 50px;
+            a {
+                text-decoration: none;
+                font-size: 32px;
+                font-weight: 400;
+                color: $black;
+                background: #DAD7CD;
+                border: 5px solid #FFFFFF;
+                border-radius: 30px;
+                padding: 23px 48px;
+                transition: 0.3s;
+
+                &:hover {
+                    background-color: $white;
+                }
+            }
+        }
+
+        img {
+            width: 100%;
+        }
+
+    }
+    // .wonderful-box-one{
+    //     padding: 250px 50px 200px 50px;
+    // }
+}
+
+// Meet wonderful 
+
+// Hydrade skin 
+.hydrade-skin{
+    .hydrade-skin-inner{
+        min-height: 700px;
+        border: 5px solid $white;
+        border-radius: 40px;
+        img{
+            width: 100%;
+        }
+    }
+}
+// Hydrade skin 
+
+// Wonderful 
+.wonderful-wrapper{
+    margin: 70px 0;
+    .wonderful-inner{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        .wonderful-box{
+            border: 5px solid #FFFFFF;
+            border-radius: 40px;
+        }
+        .wonderful-left{
+            width: 50%;
+            padding: 0 12px;
+            img{
+                width: 100%;
+            }
+        }
+        .wonderful-right{
+            // background: #DAD7CD;
+            // border: 5px solid #FFFFFF;
+            // border-radius: 40px;
+            padding: 0 50px;
+            width: 50%;
+            .wonderful-box{
+                border: 0px solid transparent !important;
+            }
+            &::after{
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: calc(50% - 12px);
+                height: 100%;
+                border: 5px solid $white;
+                border-radius: 40px;
+                content: "";
+                background: #DAD7CD;
+                z-index: -1;
+            }
+            h3 {
+                font-weight: 500;
+                font-size: 46px;
+                color: rgba(0, 0, 0, 0.8);
+                margin-bottom: 20px;
+                text-align: left;
+            }
+    
+            p {
+                font-weight: 400;
+                font-size: 28px;
+                color: rgba(0, 0, 0, 0.8);
+            }
+    
+            .tellusmore {
+                margin-top: 50px;
+                a {
+                    text-decoration: none;
+                    font-size: 32px;
+                    font-weight: 400;
+                    color: $black;
+                    background: #DAD7CD;
+                    border: 5px solid #FFFFFF;
+                    border-radius: 30px;
+                    padding: 23px 48px;
+                    transition: 0.3s;
+    
+                    &:hover {
+                        background-color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+// Wonderful 
+
+.wonderful-kits{
+    .wonderful-inner{
+        background-image: url(../assets/HomePage/wonderful-kits.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-left: 70px;
+        border: 5px solid $white;
+        border-radius: 40px;
+        min-height: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-bottom: 100px;
+        h3 {
+            font-weight: 500;
+            font-size: 46px;
+            color: rgba(0, 0, 0, 0.8);
+            margin-bottom: 0px;
+            text-align: left;
+        }
+        .tellusmore {
+            margin-top: 50px;
+            a {
+                text-decoration: none;
+                font-size: 32px;
+                font-weight: 400;
+                color: $black;
+                background: #DAD7CD;
+                border: 5px solid #FFFFFF;
+                border-radius: 30px;
+                padding: 23px 48px;
+                transition: 0.3s;
+
+                &:hover {
+                    background-color: $white;
+                }
+            }
+        }
+    }
+}
+
+
+// Follow 
+.follow-wrapper{
+    margin-top: 70px;
+    margin-bottom: 70px;
+    .follow-inner-wrapper{
+        border: 5px solid $white;
+        border-radius: 40px;
+        .title{
+            margin-top: 50px;
+            margin-bottom: 50px;
+            border: 5px solid #FFFFFF;
+            border-radius: 30px;
+            max-width: 299px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 29px 0;
+            h1{
+                text-align: center;
+                font-weight: 400;
+                font-size: 28px;
+                color: rgba(0, 0, 0, 0.8);
+                margin-bottom: 0;
+            }
+        }
+        .follow-inner{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 80px;
+            padding: 0 50px;
+            .follow-box{
+                overflow: hidden;
+                border: 5px solid $white;
+                border-radius: 40px;
+                a{
+                    transition: 0.5s;
+                    img{
+                        width: 100%;
+                        transition: 1s;
+                    }
+                    &:hover{
+                        img{
+                            transform: scale(1.3);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// Follow 
+
 
 
 // Shop By 
@@ -1112,10 +1670,10 @@ a:visited {
 // Footer 
 footer {
     font-family: $karla-font;
-    background: #ece8e0;
-    color: #676869;
-    padding-top: 60px;
-    border-top: 1px solid #ecd6d1;
+    // background: #ece8e0;
+    // color: #676869;
+    // padding-top: 60px;
+    // border-top: 1px solid #ecd6d1;
 
     .divider {
         width: 100%;
@@ -1514,6 +2072,6 @@ footer {
 
 
 .container-fluid {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 62px;
+    padding-right: 62px;
 }
