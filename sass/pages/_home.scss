@@ -435,6 +435,9 @@ a:visited {
                 overflow: hidden;
                 border-radius: 30px;
                 border: 5px solid $white;
+                @media(max-width: 1440px){
+                    height: calc(100vh - 210px);
+                }
             }
 
             .carousel-item {
@@ -715,6 +718,9 @@ a:visited {
                 font-size: 46px;
                 color: rgba(0, 0, 0, 0.8);
                 margin-bottom: 50px;
+                @media(max-width: 1440px){
+                    font-size: 36px;
+                }
             }
         }
 
@@ -943,12 +949,19 @@ a:visited {
         border-radius: 40px;
         text-align: center;
         padding: 280px 0;
+        @media(max-width: 1440px){
+            padding: 215px 0;
+        }
 
         h1 {
             font-size: 64px;
             font-weight: 500;
             color: $white;
             margin-bottom: 20px;
+            @media(max-width: 1440px){
+                font-size: 52px;
+                margin-bottom: 10px;
+            }
         }
 
         p {
@@ -956,6 +969,9 @@ a:visited {
             font-weight: 400;
             font-size: 32px;
             margin-bottom: 70px;
+            @media(max-width: 1440px){
+                font-size: 26px;
+            }
         }
 
         .tellusmore {
