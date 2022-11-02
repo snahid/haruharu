@@ -2138,6 +2138,9 @@ footer {
                 border: none;
                 color: #fff;
                 font-size: 20px;
+                @media(max-width: 767px){
+                    width: 85%;
+                }
 
                 &:focus {
                     outline: none;

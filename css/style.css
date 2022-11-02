@@ -1876,6 +1876,11 @@ footer .footer-bottom .left p a:hover {
   color: #fff;
   font-size: 20px;
 }
+@media (max-width: 767px) {
+  .search-modal .modal-content form input {
+    width: 85%;
+  }
+}
 .search-modal .modal-content form input:focus {
   outline: none;
   border: none;
