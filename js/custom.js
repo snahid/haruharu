@@ -191,7 +191,7 @@ var nextIcon = '<i class="fa fa-chevron-right" aria-hidden="true"></i>';
 // Header Sticky 
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
-    if (scroll >= 1) {
+    if (scroll >= 150) {
         $(".header").addClass("sticky");
     } else {
         $(".header").removeClass("sticky");
