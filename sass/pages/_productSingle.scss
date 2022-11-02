@@ -660,8 +660,8 @@
     padding: 30px 0;
     .header-inner-left {
       width: 33%;
-      @media(max-width: 991px){
-        width: 13%;
+      @media(max-width: 767px){
+        width: 15%;
       }
       .desktop-ul {
         @media(max-width: 991px){
@@ -781,6 +781,7 @@
       .mobile-menu{
         .offcanvas{
           background-color: #e0dbd4;
+          max-width: 300px;
           .offcanvas-body{
             padding-left: 0;
             padding-right: 0;
@@ -817,9 +818,8 @@
     .header-inner-center {
       width: 33%;
       text-align: center;
-      @media(max-width: 991px){
-        width: 53%;
-        text-align: right;
+      @media(max-width: 767px){
+        width: 70%;
       }
       a{
         img{
@@ -832,6 +832,9 @@
           @media(max-width: 991px){
             max-width: 220px;
           }
+          @media(max-width: 767px){
+            max-width: 190px;
+          }
         }
       }
     }
@@ -840,6 +843,9 @@
       display: flex;
       justify-content: flex-end;
       width: 33%;
+      @media(max-width: 767px){
+        width: 15%;
+      }
       .header-rightul {
         margin: 0;
         padding: 0;
@@ -855,29 +861,11 @@
 
           &:first-child {
             margin-left: 0;
-            @media(max-width: 991px){
-              display: none;
-            }
           }
-          &:nth-child(2){
-            display: none;
-            @media(max-width: 991px){
-              display: block;
-            }
-          }
-          &:nth-child(4){
-            // @media(max-width: 991px){
-            //   display: none;
-            // }
-          }
+        
+         
 
-          &:last-child {
-            margin-right: 0;
-            // @media(max-width: 991px){
-            //   display: none;
-            // }
-          }
-
+       
           form {
             .formgroup {
               position: relative;
@@ -930,9 +918,27 @@
             }
           }
         }
+        .search-li{
+          @media(max-width: 991px){
+            display: none;
+          }
+         }
+         .shopping-li{
+          margin-right: 0;
+         }
+         .search-mobile-icon{
+          display: none;
+          @media(max-width: 991px){
+            display: block;
+          }
+         }
 
         .favorite-li {
           position: relative;
+          @media(max-width: 991px){
+            display: none;
+          }
+          
 
           div {
             background-color: #000000;
@@ -943,6 +949,11 @@
             position: absolute;
             right: -4px;
             top: 3px;
+          }
+        }
+        .account-li{
+          @media(max-width: 991px){
+            display: none;
           }
         }
       }
