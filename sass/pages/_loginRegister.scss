@@ -1,6 +1,6 @@
 .login-signup-wrapper {
     margin-bottom: 100px;
-    margin-top: 70px;
+    // margin-top: 70px;
     .login-signup-inner {
         display: flex;
         flex-direction: row;
@@ -12,7 +12,7 @@
 
         .left-side {
             width: 50%;
-            background-image: url(../assets/HomePage/login-signup-img.png);
+            background-image: url(../assets/HomePage/19.jpg);
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -20,6 +20,12 @@
             overflow: hidden;
             border-top-left-radius: 40px;
             border-bottom-left-radius: 40px;
+            @media(max-width: 1366px){
+                min-height: calc(100vh - 250px);
+            }
+            @media(max-width: 767px){
+                display: none;
+            }
 
             img {
                 width: 100%;
@@ -29,17 +35,40 @@
         .right-side {
             width: 50%;
             text-align: center;
+            @media(max-width: 767px){
+                width: 100%;
+                padding: 30px 0;
+            }
 
             .login-signup-form {
                 max-width: 80%;
                 margin-left: auto;
                 margin-right: auto;
+                @media(max-width: 1366px){
+                    max-width: 90%;
+                }
+                @media(max-width: 1199px){
+                    max-width: 92%;
+                }
 
                 h3 {
                     font-weight: 500;
                     font-size: 64px;
                     color: #C2B2B8;
                     margin-bottom: 35px;
+                    @media(max-width: 1440px){
+                        font-size: 52px;
+                    }
+                    @media(max-width: 1199px){
+                        font-size: 40px;
+                    }
+                    @media(max-width: 575px){
+                        font-size: 32px;
+                        margin-bottom: 15px;
+                    }
+                    @media(max-width: 450px){
+                        font-size: 26px;
+                    }
                 }
 
                 form {
@@ -53,6 +82,9 @@
                         border: 1px solid transparent;
                         color: rgba(0, 0, 0, 0.8);
                         padding: 20px 50px;
+                        @media(max-width: 1199px){
+                            padding: 12px 30px;
+                        }
 
                         &:focus {
                             border-color: #C2B2B8;
@@ -63,6 +95,9 @@
 
                     .submit-wrapper {
                         margin-top: 40px;
+                        @media(max-width: 575px){
+                            margin-top: 20px;
+                        }
                         button {
                             color: rgba(0, 0, 0, 0.8);
                             font-weight: 500;
@@ -73,6 +108,14 @@
                             border-radius: 30px;
                             padding: 20px 80px;
                             transition: 0.3s;
+                            @media(max-width: 1440px){
+                                font-size: 20px;
+                                padding: 15px 50px;
+                            }
+                            @media(max-width: 575px){
+                                font-size: 20px;
+                                padding: 8px 40px;
+                            }
                             &:hover{
                                 background-color: $white;
                             }
@@ -81,11 +124,23 @@
                 }
                 .bottom{
                     margin-top: 50px;
+                    @media(max-width: 575px){
+                        margin-top: 25px;
+                    }
                     a{
                         color: rgba(0, 0, 0, 1);
                         font-weight: 400;
                         font-size: 32px;
                         transition: 0.3s;
+                        @media(max-width: 1440px){
+                            font-size: 26px;
+                        }
+                        @media(max-width: 1199px){
+                            font-size: 18px;
+                        }
+                        @media(max-width: 575px){
+                            font-size: 17px;
+                        }
                         &:hover{
                             text-decoration: underline;
                         }
@@ -94,6 +149,15 @@
                         color: rgba(0, 0, 0, 1);
                         font-weight: 400;
                         font-size: 32px;
+                        @media(max-width: 1440px){
+                            font-size: 26px;
+                        }
+                        @media(max-width: 1199px){
+                            font-size: 18px;
+                        }
+                        @media(max-width: 575px){
+                            font-size: 17px;
+                        }
                     }
                 }
             }

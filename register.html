@@ -36,13 +36,50 @@
             <p>FREE SHIPPING ABOVE `1999</p>
         </div>
     </div>
-    <div class="header-banner-section about-header-section">
+    <div class="header-banner-section">
         <div class="header-inner">
             <div class="header">
                 <div class="container-fluid">
                     <div class="header-inner-wrapper">
                         <div class="header-inner-left">
-                            <ul>
+                            <!-- Mobile Menu Icon  -->
+                            <div class="mobile-menu-icon">
+                                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                                    data-bs-target="#menuSlide" aria-controls="menuSlide">
+                                    <div class="line line1"></div>
+                                    <div class="line line2"></div>
+                                    <div class="line line3"></div>
+                                </button>
+                            </div>
+
+                            <!-- Mobile Menu  -->
+                            <div class="mobile-menu">
+                                <div class="offcanvas offcanvas-start" tabindex="-1" id="menuSlide"
+                                    aria-labelledby="menuSlide">
+                                    <div class="offcanvas-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <div class="mobile-menu-wrapper">
+                                            <ul class="mobile-ul">
+                                                <li><a href="#">Shop</a></li>
+                                                <li><a href="#">About Us</a></li>
+                                                <li><a href="#">Press</a></li>
+                                                <li><a href="#">WishList</a></li>
+                                                <li><a href="#">LogIn</a></li>
+                                                <li><a href="#">My Account</a></li>
+                                                <li><a href="#">LogOut</a></li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Mobile Menu  -->
+                            <!-- Mobile Menu Icon  -->
+                            <ul class="desktop-ul">
                                 <li><a href="#">Shop</a></li>
                                 <li><a href="#">About Us</a></li>
                                 <li><a href="#">Press</a></li>
@@ -53,7 +90,7 @@
                         </div>
                         <div class="header-inner-right">
                             <ul class="header-rightul">
-                                <li>
+                                <li class="search-li">
                                     <!-- Search-form  -->
                                     <form action="">
                                         <div class="formgroup">
@@ -64,7 +101,12 @@
                                     </form>
                                     <!-- Search-form  -->
                                 </li>
-                                <li>
+                                <li class="search-mobile-icon">
+                                    <a data-bs-toggle="modal" href="#exampleModalToggle"><i class="fa fa-search"
+                                            aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="shopping-li">
                                     <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
                                 </li>
                                 <li class="favorite-li">
@@ -72,7 +114,7 @@
                                         <div></div>
                                     </a>
                                 </li>
-                                <li>
+                                <li class="account-li">
                                     <div class="dropdown">
                                         <button class="btn btn-secondary dropdown-toggle" type="button"
                                             data-bs-toggle="dropdown" aria-expanded="false">
@@ -84,45 +126,24 @@
                                         </ul>
                                     </div>
                                 </li>
+
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="container-fluid">
+            <div class="banner">
+
+            </div>
+        </div>
+
     </div>
 
 
     <!-- Login  -->
-
-    <!-- <div class="login-register-wrapper login-container">
-        <div class="container">
-            <div class="login-register-inner">
-                <div class="title">
-                    <h3>Login</h3>
-                </div>
-                <form action="">
-                    <div class="form-group">
-                        <label for="mobile">Mobile</label>
-                        <input type="text" name="mobile" id="mobile" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="password" class="form-control">
-                    </div>
-                    <div class="forgot-wrapper">
-                        <a class="forgot-password" href="javascript:void(0);">Forgot your password</a>
-                    </div>
-                    <div class="submit-wrapper">
-                        <button type="submit" class="btn submitbtn">Sign In</button>
-                        <a href="./register.html">Create account</a>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div> -->
-    
-
     <div class="login-signup-wrapper">
         <div class="container-fluid">
             <div class="login-signup-inner">

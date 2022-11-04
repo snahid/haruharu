@@ -1,10 +1,14 @@
 .product-list {
-    margin-top: 50px;
+    // margin-top: 50px;
     margin-bottom: 50px;
     .product-list-inner {
         .product-list-box {
             margin-bottom: 50px;
             padding: 50px;
+            padding-top: 0;
+            @media(max-width: 767px){
+                padding: 0;
+            }
             .best-seller-box {
                 position: relative;
                 z-index: 1;
@@ -137,6 +141,9 @@
                             // line-height: 50px;
                             color: rgba(0, 0, 0, 0.8);
                             margin-top: 15px;
+                            @media(max-width: 1440px){
+                                font-size: 20px;
+                            }
                         }
 
                         span {
@@ -145,6 +152,9 @@
                             font-size: 20px;
                             // line-height: 50px;
                             color: rgba(0, 0, 0, 0.8);
+                            @media(max-width: 1440px){
+                                font-size: 16px;
+                            }
                         }
 
                         h6 {
@@ -153,6 +163,9 @@
                             letter-spacing: 0.05em;
                             color: rgba(0, 0, 0, 0.8);
                             margin: 15px 0;
+                            @media(max-width: 1440px){
+                                font-size: 22px;
+                            }
                         }
 
                         .addtocartbtn {
@@ -164,6 +177,10 @@
                             color: rgba(0, 0, 0, 0.8);
                             padding: 14px 61px;
                             transition: 0.3s;
+                            @media(max-width: 1440px){
+                                font-size: 20px;
+                                padding: 8px 40px;
+                            }
                             &:hover{
                                 background-color: #fff;
 
