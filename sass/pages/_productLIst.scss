@@ -228,21 +228,20 @@ footer{
             padding: 120px 30px 50px 50px;
         }
         @media(max-width: 767px){
-            padding: 70px 30px 30px 30px;
+            padding: 70px 15px 30px 15px;
         }
         @media(max-width: 400px){
             padding: 50px 15px 20px 15px;
         }
         .footer-inner-top{
-            width: 70%;
+            width: 100%;
             margin-left: auto;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            @media(max-width: 1550px){
-                width: 80%;
-            }
             @media(max-width: 1199px){
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
                 width: 100%;
                 padding-bottom: 19px;
                 border-bottom: 1px solid rgba(255,255,255,0.2);
@@ -255,14 +254,36 @@ footer{
            
             .footer-top-box{
                 &:first-child{
-                    width: 20%;
-                    @media(max-width: 575px){
+                    width: 23%;
+                    display: flex;
+                    align-items: center;
+                    @media(max-width: 1199px){
+                        grid-column-start: 1;
+                        grid-column-end: 5;
                         width: 100%;
+                        margin-bottom: 50px;
+                    }
+                    @media(max-width: 575px){
+                        margin-bottom: 10px;
+                    }
+                    a{
+                        img{
+                            max-width: 90%;
+                            @media(max-width: 1199px){
+                                max-width: 200px;
+                            }
+                        }
                     }
                 }
                 &:nth-child(2){
-                    width: 30%;
-                    @media(max-width: 575px){
+                    width: 17%;
+                    @media(max-width: 1199px){
+                        width: 100%;
+                    }
+                }
+                &:nth-child(3){
+                    width: 20%;
+                    @media(max-width: 1199px){
                         width: 100%;
                     }
                 }
@@ -271,8 +292,8 @@ footer{
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
-                    @media(max-width: 1024px){
-                        width: 45%;
+                    @media(max-width: 1199px){
+                        width: 100%;
                     }
                     @media(max-width: 575px){
                         width: 100%;
@@ -326,6 +347,7 @@ footer{
                     }
                     @media(max-width: 575px){
                         margin-top: 10px;
+                        margin-bottom: 15px;
                     }
                 }
                 form{
@@ -382,6 +404,7 @@ footer{
                     }
                     @media(max-width: 575px){
                         margin-top: 10px;
+                        line-height: 24px;
                     }
                 }
             }
