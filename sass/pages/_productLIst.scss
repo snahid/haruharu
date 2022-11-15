@@ -136,11 +136,11 @@
                         p {
                             font-size: 15px;
                             margin-bottom: 0px;
-                            font-weight: 400;
-                            font-size: 24px;
+                            font-weight: 500;
+                            font-size: 28px;
                             // line-height: 50px;
                             color: rgba(0, 0, 0, 0.8);
-                            margin-top: 15px;
+                            margin-top: 30px;
                             @media(max-width: 1440px){
                                 font-size: 20px;
                             }
@@ -309,13 +309,10 @@ footer{
                         list-style: none;
                         margin-bottom: 10px;
                         a{
-                            font-size: 24px;
+                            font-size: 18px;
                             font-weight: 500;
                             color: $white;
                             transition: 0.3s;
-                            @media(max-width: 1440px){
-                                font-size: 19px;
-                            }
                             @media(max-width: 991px){
                                 font-size: 18px;
                             }
@@ -333,7 +330,7 @@ footer{
                 }
                 h6{
                     font-weight: 500;
-                    font-size: 24px;
+                    font-size: 20px;
                     color: $white;
                     text-transform: uppercase;
                     @media(max-width: 1440px){
@@ -389,7 +386,7 @@ footer{
                 }
                 p{
                     font-weight: 400;
-                    font-size: 20px;
+                    font-size: 18px;
                     text-transform: capitalize;
                     color: $white;
                     margin-bottom: 10px;
@@ -417,7 +414,7 @@ footer{
             .social-wrapper{
                 h6{
                     font-weight: 500;
-                    font-size: 24px;
+                    font-size: 20px;
                     color: $white;
                     margin-bottom: 20px;
                     @media(max-width: 1440px){
@@ -426,12 +423,19 @@ footer{
                     }
                 }
                 .social{
+                    margin-left: -10px;
+                    @media(max-width: 1440px){
+                        margin-left: -8.5px;
+                    }
+                    @media(max-width: 767px){
+                        margin-left: 0px;
+                    }
                     a{
                         text-decoration: none;
                         color: $white;
                         // color: $black;
-                        font-size: 28px;
-                        padding: 3.5px 11px;
+                        font-size: 22px;
+                        padding: 3.5px 10px;
                         // background-color: $white;
                         transition: 0.3s;
                         border-radius: 50%;

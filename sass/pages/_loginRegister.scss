@@ -16,12 +16,12 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            min-height: calc(100vh - 50px);
+            min-height: 900px;
             overflow: hidden;
             border-top-left-radius: 40px;
             border-bottom-left-radius: 40px;
             @media(max-width: 1366px){
-                min-height: calc(100vh - 250px);
+                min-height: 750px;
             }
             @media(max-width: 767px){
                 display: none;
@@ -53,13 +53,10 @@
 
                 h3 {
                     font-weight: 500;
-                    font-size: 64px;
+                    font-size: 50px;
                     color: #C2B2B8;
                     margin-bottom: 35px;
                     @media(max-width: 1440px){
-                        font-size: 52px;
-                    }
-                    @media(max-width: 1199px){
                         font-size: 40px;
                     }
                     @media(max-width: 575px){
@@ -81,7 +78,7 @@
                         border-radius: 30px;
                         border: 1px solid transparent;
                         color: rgba(0, 0, 0, 0.8);
-                        padding: 20px 50px;
+                        padding: 15px 50px;
                         @media(max-width: 1199px){
                             padding: 12px 30px;
                         }
@@ -101,19 +98,19 @@
                         button {
                             color: rgba(0, 0, 0, 0.8);
                             font-weight: 500;
-                            font-size: 32px;
+                            font-size: 28px;
                             text-transform: uppercase;
                             background: #DAD7CD;
                             border: 5px solid #FFFFFF;
                             border-radius: 30px;
-                            padding: 20px 80px;
+                            padding: 18px 70px;
                             transition: 0.3s;
                             @media(max-width: 1440px){
-                                font-size: 20px;
-                                padding: 15px 50px;
+                                font-size: 18px;
+                                padding: 12px 50px;
                             }
                             @media(max-width: 575px){
-                                font-size: 20px;
+                                font-size: 16px;
                                 padding: 8px 40px;
                             }
                             &:hover{
@@ -130,7 +127,7 @@
                     a{
                         color: rgba(0, 0, 0, 1);
                         font-weight: 400;
-                        font-size: 32px;
+                        font-size: 28px;
                         transition: 0.3s;
                         @media(max-width: 1440px){
                             font-size: 26px;
@@ -148,7 +145,7 @@
                     p{
                         color: rgba(0, 0, 0, 1);
                         font-weight: 400;
-                        font-size: 32px;
+                        font-size: 28px;
                         @media(max-width: 1440px){
                             font-size: 26px;
                         }
@@ -157,6 +154,9 @@
                         }
                         @media(max-width: 575px){
                             font-size: 17px;
+                        }
+                        a{
+                            font-weight: 500 !important;
                         }
                     }
                 }

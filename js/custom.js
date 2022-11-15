@@ -212,6 +212,79 @@ $(document).ready(function () {
         $(".black-logo").removeClass("show");
     });
 
+    $(".hover1").hover(function(){
+        $(".makeover-right h4").removeClass("shover");
+        $(this).closest(".makeover-right h4").addClass("shover");
+        $(".macadamia").addClass("hover-show");
+        $(".blackrice").removeClass("hover-show");
+        $(".oliveoil").removeClass("hover-show");
+    });
+    $(".hover2").hover(function(){
+        $(".makeover-right h4").removeClass("shover");
+        $(this).closest(".makeover-right h4").addClass("shover");
+        $(".blackrice").addClass("hover-show");
+        $(".macadamia").removeClass("hover-show");
+        $(".oliveoil").removeClass("hover-show");
+    });
+    $(".hover3").hover(function(){
+        $(".makeover-right h4").removeClass("shover");
+        $(this).closest(".makeover-right h4").addClass("shover");
+        $(".oliveoil").addClass("hover-show");
+        $(".blackrice").removeClass("hover-show");
+        $(".macadamia").removeClass("hover-show");
+    });
+
+    // $(".account-btn").click(function(){
+    //     $("#addresses").removeClass("account-content-show");
+    //     $("#orders").removeClass("account-content-show");
+    //     $("#accountOverview").addClass("account-content-show");
+    //     $(".address-btn").removeClass("account-active");
+    //     $(".orders-btn").removeClass("account-active");
+    //     $(".account-btn").addClass("account-active");
+    // });
+    // $(".orders-btn").click(function(){
+    //     $("#accountOverview").removeClass("account-content-show");
+    //     $("#addresses").removeClass("account-content-show");
+    //     $("#orders").addClass("account-content-show");
+    //     $(".address-btn").removeClass("account-active");
+    //     $(".account-btn").removeClass("account-active");
+    //     $(".orders-btn").addClass("account-active");
+    // });
+    // $(".viewAllOrders").click(function(){
+    //     $("#accountOverview").removeClass("account-content-show");
+    //     $("#addresses").removeClass("account-content-show");
+    //     $("#orders").addClass("account-content-show");
+    //     $(".address-btn").removeClass("account-active");
+    //     $(".account-btn").removeClass("account-active");
+    //     $(".orders-btn").addClass("account-active");
+    // });
+    // $(".address-btn").click(function(){
+    //     $("#orders").removeClass("account-content-show");
+    //     $("#accountOverview").removeClass("account-content-show");
+    //     $("#addresses").addClass("account-content-show");
+    //     $(".account-btn").removeClass("account-active");
+    //     $(".orders-btn").removeClass("account-active");
+    //     $(".address-btn").addClass("account-active");
+    // });
+
+    // $(".viewaddressbook").click(function(){
+    //     $("#orders").removeClass("account-content-show");
+    //     $("#accountOverview").removeClass("account-content-show");
+    //     $("#addresses").addClass("account-content-show");
+    //     $(".account-btn").removeClass("account-active");
+    //     $(".orders-btn").removeClass("account-active");
+    //     $(".address-btn").addClass("account-active");
+    // });
+    // $(".changeDefaultaddress").click(function(){
+    //     $("#orders").removeClass("account-content-show");
+    //     $("#accountOverview").removeClass("account-content-show");
+    //     $("#addresses").addClass("account-content-show");
+    //     $(".account-btn").removeClass("account-active");
+    //     $(".orders-btn").removeClass("account-active");
+    //     $(".address-btn").addClass("account-active");
+    // });
+
+
     // Filter 
     $(".filter-btn").click(function(){
         $(".filter-btn").toggleClass("filterToggle");
@@ -466,3 +539,72 @@ $(".cart-plus").click(function(){
         $(this).prev(".cart-count-input").val(currentVal + 1);
     }
 });
+
+
+
+
+// Product Mobile Slider 
+$('.productMobileSlider').owlCarousel({
+    loop: true,
+    margin: 10,
+    // animateOut: 'fadeOut',
+    nav: true,
+    dots: true,
+    navText: [
+        prevIcon,
+        nextIcon
+    ],
+    // dots: false,
+    responsive: {
+        0: {
+            items: 1
+        },
+        260: {
+            items: 1
+        },
+        380: {
+            items: 1
+        },
+        768: {
+            items: 1
+        },
+        992: {
+            items: 1
+        },
+        1300: {
+            items: 1
+        }
+    }
+})
+$('.productMobileInnerSlider').owlCarousel({
+    loop: true,
+    margin: 10,
+    // animateOut: 'fadeOut',
+    nav: true,
+    navText: [
+        prevIcon,
+        nextIcon
+    ],
+    dots: false,
+    responsive: {
+        0: {
+            items: 1
+        },
+        260: {
+            items: 1
+        },
+        380: {
+            items: 1
+        },
+        768: {
+            items: 1
+        },
+        992: {
+            items: 1
+        },
+        1300: {
+            items: 1
+        }
+    }
+})
+// Product Mobile Slider 

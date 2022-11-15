@@ -46,9 +46,7 @@
               <div class="mobile-menu-icon">
                 <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuSlide"
                   aria-controls="menuSlide">
-                  <div class="line line1"></div>
-                  <div class="line line2"></div>
-                  <div class="line line3"></div>
+                  <i class="fa fa-bars" aria-hidden="true"></i>
                 </button>
               </div>
 
@@ -61,12 +59,35 @@
                   <div class="offcanvas-body">
                     <div class="mobile-menu-wrapper">
                       <ul class="mobile-ul">
-                        <li><a href="#">Shop</a></li>
+                        <li><a class="shopCollapsebtn" data-bs-toggle="collapse" href="#mobileMenuCollapse" role="button" aria-expanded="false" aria-controls="mobileMenuCollapse">
+                          Shop
+                        </a>
+                          <!-- Collapse Menu  -->
+                          <div class="collapse" id="mobileMenuCollapse">
+                            <div class="card card-body">
+                              <ul>
+                                <li><a href="#">All Products</a></li>
+                                <li><a href="#">All Products</a></li>
+                                <li><a href="#">All Products</a></li>
+                                <li><a href="#">All Products</a></li>
+                                <li><a href="#">All Products</a></li>
+                                <li><a href="#">All Products</a></li>
+                                <li><a href="#">All Products</a></li>
+                                <li><a href="#">All Products</a></li>
+                                <li><a href="#">All Products</a></li>
+                                <li><a href="#">All Products</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <!-- Collapse Menu  -->
+                        </li>
                         <li><a href="#">About Us</a></li>
                         <li><a href="#">Press</a></li>
                         <li><a href="#">WishList</a></li>
                         <li><a href="#">LogIn</a></li>
-                        <li><a href="#">My Account</a></li>
+                        <li><a href="./profile.html">My Profile</a></li>
+                        <li><a href="./orders.html">Orders</a></li>
+                        <li><a href="./address.html">Addresses</a></li>
                         <li><a href="#">LogOut</a></li>
                       </ul>
                     </div>
@@ -78,7 +99,41 @@
               <!-- Mobile Menu  -->
               <!-- Mobile Menu Icon  -->
               <ul class="desktop-ul">
-                <li><a href="#">Shop</a></li>
+                <li class="hovermenu">
+                  <a href="javascript:void(0);">Shop</a>
+                  <div class="megamenu-wrapper">
+                      <div class="megamenu">
+                          <ul>
+                              <li><a class="allproducts" href="./all-products.html">All Products</a></li>
+                          </ul>
+                      </div>
+                      <div class="megamenu">
+                          <ul>
+                              <li><a class="type-color" href="./all-products.html">By Product types</a></li>
+                              <li><a href="./cleansing.html">Cleanser</a></li>
+                              <li><a href="./black-rice-toner.html">Toner/Mist</a></li>
+                              <li><a href="./serum.html">Serum/Ampoule/Essence/Oil</a></li>
+                              <li><a href="./cream.html">Cream/Eye Cream</a></li>
+                              <li><a href="./special.html">Special</a></li>
+                              <li><a href="./sets.html">SET</a></li>
+                          </ul>
+                      </div>
+                      <div class="megamenu">
+                          <ul>
+                              <li><a class="type-color" href="./all-products.html">By Skin Concerns</a></li>
+                              <li><a href="./anti-wrinkle.html">Well-Aging</a></li>
+                              <li><a href="./moisturizers.html">Moisturizing</a></li>
+                              <li><a href="./brightening.html">Brightening</a></li>
+                              <li><a href="./soothing.html">Soothing</a></li>
+                          </ul>
+                      </div>
+                      <div class="megamenu">
+                        <ul>
+                          <li><a href="#">Fermented Black Rice Line</a></li>
+                        </ul>
+                      </div>
+                  </div>
+              </li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Press</a></li>
               </ul>
@@ -130,7 +185,7 @@
           </div>
         </div>
       </div>
-    </div>
+  </div>
     <div class="container-fluid">
       <div class="banner">
         <div id="carouselExampleDark" class="carousel carousel-fade carousel-dark slide" data-bs-ride="carousel">
@@ -189,128 +244,392 @@
         <div class="title">
           <h1>Most loved wonders</h1>
         </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="product-list-box">
-              <div class="best-seller-box">
-                <div class="best-seller-top">
-                  <div class="best-seller-img">
-                    <img src="./assets/ProductList/product-list-1.png" alt="" />
+          <div class="row desktop-top-product-wrapper">
+            <div class="col-md-4">
+              <div class="product-list-box">
+                <div class="best-seller-box">
+                  <div class="best-seller-top">
+                    <div class="best-seller-img">
+                      <img src="./assets/ProductList/product-list-1.png" alt="" />
+                    </div>
+                    <div class="best-seller-slider">
+                      <div class="best-slider">
+                        <div class="owl-carousel owl-theme bestsellerslider1">
+                          <div class="item">
+                            <a href="#">
+                              <img src="./assets/ProductList/product-list-1.png" alt="" />
+                            </a>
+                          </div>
+                          <div class="item">
+                            <a href="#">
+                              <img src="./assets/ProductList/product-list-3.png" alt="" />
+                            </a>
+                          </div>
+                          <div class="item">
+                            <a href="#">
+                              <img src="./assets/ProductList/product-list-1.png" alt="" />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="best-seller-slider">
-                    <div class="best-slider">
-                      <div class="owl-carousel owl-theme bestsellerslider1">
-                        <div class="item">
-                          <a href="#">
+                  <div class="best-seller-details">
+                    <a href="#">
+                      <p>Black rice hyaluronic cream</p>
+                      <span>Delivers internse hydration | All skin types</span>
+                      <h6>Rs.2999</h6>
+                      <button class="addtocartbtn">Add to cart</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="product-list-box">
+                <div class="best-seller-box">
+                  <div class="best-seller-top">
+                    <div class="best-seller-img">
+                      <img src="./assets/ProductList/product-list-3.png" alt="" />
+                    </div>
+                    <div class="best-seller-slider">
+                      <div class="best-slider">
+                        <div class="owl-carousel owl-theme bestsellerslider1">
+                          <div class="item">
+                            <a href="#">
+                              <img src="./assets/ProductList/product-list-3.png" alt="" />
+                            </a>
+                          </div>
+                          <div class="item">
+                            <a href="#">
+                              <img src="./assets/ProductList/product-list-2.png" alt="" />
+                            </a>
+                          </div>
+                          <div class="item">
+                            <a href="#">
+                              <img src="./assets/ProductList/product-list-3.png" alt="" />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="best-seller-details">
+                    <a href="#">
+                      <p>Black rice hyaluronic toner</p>
+                      <span>Delivers internse hydration | All skin types</span>
+                      <h6>Rs.2999</h6>
+                      <button class="addtocartbtn">Add to cart</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="product-list-box">
+                <div class="best-seller-box">
+                  <div class="best-seller-top">
+                    <div class="best-seller-img">
+                      <img src="./assets/ProductList/product-list-2.png" alt="" />
+                    </div>
+                    <div class="best-seller-slider">
+                      <div class="best-slider">
+                        <div class="owl-carousel owl-theme bestsellerslider1">
+                          <div class="item">
+                            <a href="#">
+                              <img src="./assets/ProductList/product-list-2.png" alt="" />
+                            </a>
+                          </div>
+                          <div class="item">
+                            <a href="#">
+                              <img src="./assets/ProductList/product-list-3.png" alt="" />
+                            </a>
+                          </div>
+                          <div class="item">
+                            <a href="#">
+                              <img src="./assets/ProductList/product-list-2.png" alt="" />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="best-seller-details">
+                    <a href="#">
+                      <p>Black rice hyaluronic cream</p>
+                      <span>Delivers internse hydration | All skin types</span>
+                      <h6>Rs.2999</h6>
+                      <button class="addtocartbtn">Add to cart</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Product Mobile Slider  -->
+          <div class="mobile-product-wrapper">
+            <div class="mobile-product-slider">
+              <div class="product-list-box">
+                <div class="best-seller-box">
+                  <div class="best-seller-top">
+                    <div class="best-seller-img">
+                      <img src="./assets/ProductList/product-list-1.png" alt="" />
+                    </div>
+                    <div class="best-seller-slider">
+                      <div class="best-slider">
+                        <div class="owl-carousel owl-theme bestsellerslider1">
+                          <div class="item">
+                            <a href="#">
+                              <img src="./assets/ProductList/product-list-1.png" alt="" />
+                            </a>
+                          </div>
+                          <div class="item">
+                            <a href="#">
+                              <img src="./assets/ProductList/product-list-3.png" alt="" />
+                            </a>
+                          </div>
+                          <div class="item">
+                            <a href="#">
+                              <img src="./assets/ProductList/product-list-1.png" alt="" />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="best-seller-details">
+                    <a href="#">
+                      <p>Black rice hyaluronic cream</p>
+                      <span>Delivers internse hydration | All skin types</span>
+                      <h6>Rs.2999</h6>
+                      <button class="addtocartbtn">Add to cart</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-list-box">
+                <div class="best-seller-box">
+                  <div class="best-seller-top">
+                    <div class="best-seller-img">
+                      <img src="./assets/ProductList/product-list-3.png" alt="" />
+                    </div>
+                    <div class="best-seller-slider">
+                      <div class="best-slider">
+                        <div class="owl-carousel owl-theme bestsellerslider1">
+                          <div class="item">
+                            <a href="#">
+                              <img src="./assets/ProductList/product-list-3.png" alt="" />
+                            </a>
+                          </div>
+                          <div class="item">
+                            <a href="#">
+                              <img src="./assets/ProductList/product-list-2.png" alt="" />
+                            </a>
+                          </div>
+                          <div class="item">
+                            <a href="#">
+                              <img src="./assets/ProductList/product-list-3.png" alt="" />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="best-seller-details">
+                    <a href="#">
+                      <p>Black rice hyaluronic toner</p>
+                      <span>Delivers internse hydration | All skin types</span>
+                      <h6>Rs.2999</h6>
+                      <button class="addtocartbtn">Add to cart</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-list-box">
+                <div class="best-seller-box">
+                  <div class="best-seller-top">
+                    <div class="best-seller-img">
+                      <img src="./assets/ProductList/product-list-2.png" alt="" />
+                    </div>
+                    <div class="best-seller-slider">
+                      <div class="best-slider">
+                        <div class="owl-carousel owl-theme bestsellerslider1">
+                          <div class="item">
+                            <a href="#">
+                              <img src="./assets/ProductList/product-list-2.png" alt="" />
+                            </a>
+                          </div>
+                          <div class="item">
+                            <a href="#">
+                              <img src="./assets/ProductList/product-list-3.png" alt="" />
+                            </a>
+                          </div>
+                          <div class="item">
+                            <a href="#">
+                              <img src="./assets/ProductList/product-list-2.png" alt="" />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="best-seller-details">
+                    <a href="#">
+                      <p>Black rice hyaluronic cream</p>
+                      <span>Delivers internse hydration | All skin types</span>
+                      <h6>Rs.2999</h6>
+                      <button class="addtocartbtn">Add to cart</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Product Mobile Slider  -->
+
+
+          <!-- Mobile Product Slider  -->
+          <!-- <div class="mobile-product-slider">
+            <div class="row">
+              <div class="owl-carousel owl-theme productMobileSlider">
+                <div class="item">
+                  <div class="col-md-4">
+                    <div class="product-list-box">
+                      <div class="best-seller-box">
+                        <div class="best-seller-top">
+                          <div class="best-seller-img">
                             <img src="./assets/ProductList/product-list-1.png" alt="" />
-                          </a>
+                          </div>
+                          <div class="best-seller-slider">
+                            <div class="best-slider">
+                              <div class="owl-carousel owl-theme productMobileSlider">
+                                <div class="item">
+                                  <a href="#">
+                                    <img src="./assets/ProductList/product-list-1.png" alt="" />
+                                  </a>
+                                </div>
+                                <div class="item">
+                                  <a href="#">
+                                    <img src="./assets/ProductList/product-list-3.png" alt="" />
+                                  </a>
+                                </div>
+                                <div class="item">
+                                  <a href="#">
+                                    <img src="./assets/ProductList/product-list-1.png" alt="" />
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                        <div class="item">
+                        <div class="best-seller-details">
                           <a href="#">
-                            <img src="./assets/ProductList/product-list-3.png" alt="" />
-                          </a>
-                        </div>
-                        <div class="item">
-                          <a href="#">
-                            <img src="./assets/ProductList/product-list-1.png" alt="" />
+                            <p>Black rice hyaluronic cream</p>
+                            <span>Delivers internse hydration | All skin types</span>
+                            <h6>Rs.2999</h6>
+                            <button class="addtocartbtn">Add to cart</button>
                           </a>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="best-seller-details">
-                  <a href="#">
-                    <p>Black rice hyaluronic cream</p>
-                    <span>Delivers internse hydration | All skin types</span>
-                    <h6>Rs.2999</h6>
-                    <button class="addtocartbtn">Add to cart</button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="product-list-box">
-              <div class="best-seller-box">
-                <div class="best-seller-top">
-                  <div class="best-seller-img">
-                    <img src="./assets/ProductList/product-list-3.png" alt="" />
-                  </div>
-                  <div class="best-seller-slider">
-                    <div class="best-slider">
-                      <div class="owl-carousel owl-theme bestsellerslider1">
-                        <div class="item">
-                          <a href="#">
+                <div class="item">
+                  <div class="col-md-4">
+                    <div class="product-list-box">
+                      <div class="best-seller-box">
+                        <div class="best-seller-top">
+                          <div class="best-seller-img">
                             <img src="./assets/ProductList/product-list-3.png" alt="" />
-                          </a>
+                          </div>
+                          <div class="best-seller-slider">
+                            <div class="best-slider">
+                              <div class="owl-carousel owl-theme productMobileSlider">
+                                <div class="item">
+                                  <a href="#">
+                                    <img src="./assets/ProductList/product-list-3.png" alt="" />
+                                  </a>
+                                </div>
+                                <div class="item">
+                                  <a href="#">
+                                    <img src="./assets/ProductList/product-list-2.png" alt="" />
+                                  </a>
+                                </div>
+                                <div class="item">
+                                  <a href="#">
+                                    <img src="./assets/ProductList/product-list-3.png" alt="" />
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                        <div class="item">
+                        <div class="best-seller-details">
                           <a href="#">
-                            <img src="./assets/ProductList/product-list-2.png" alt="" />
-                          </a>
-                        </div>
-                        <div class="item">
-                          <a href="#">
-                            <img src="./assets/ProductList/product-list-3.png" alt="" />
+                            <p>Black rice hyaluronic toner</p>
+                            <span>Delivers internse hydration | All skin types</span>
+                            <h6>Rs.2999</h6>
+                            <button class="addtocartbtn">Add to cart</button>
                           </a>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="best-seller-details">
-                  <a href="#">
-                    <p>Black rice hyaluronic toner</p>
-                    <span>Delivers internse hydration | All skin types</span>
-                    <h6>Rs.2999</h6>
-                    <button class="addtocartbtn">Add to cart</button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="product-list-box">
-              <div class="best-seller-box">
-                <div class="best-seller-top">
-                  <div class="best-seller-img">
-                    <img src="./assets/ProductList/product-list-2.png" alt="" />
-                  </div>
-                  <div class="best-seller-slider">
-                    <div class="best-slider">
-                      <div class="owl-carousel owl-theme bestsellerslider1">
-                        <div class="item">
-                          <a href="#">
+                <div class="item">
+                  <div class="col-md-4">
+                    <div class="product-list-box">
+                      <div class="best-seller-box">
+                        <div class="best-seller-top">
+                          <div class="best-seller-img">
                             <img src="./assets/ProductList/product-list-2.png" alt="" />
-                          </a>
+                          </div>
+                          <div class="best-seller-slider">
+                            <div class="best-slider">
+                              <div class="owl-carousel owl-theme productMobileSlider">
+                                <div class="item">
+                                  <a href="#">
+                                    <img src="./assets/ProductList/product-list-2.png" alt="" />
+                                  </a>
+                                </div>
+                                <div class="item">
+                                  <a href="#">
+                                    <img src="./assets/ProductList/product-list-3.png" alt="" />
+                                  </a>
+                                </div>
+                                <div class="item">
+                                  <a href="#">
+                                    <img src="./assets/ProductList/product-list-2.png" alt="" />
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                        <div class="item">
+                        <div class="best-seller-details">
                           <a href="#">
-                            <img src="./assets/ProductList/product-list-3.png" alt="" />
-                          </a>
-                        </div>
-                        <div class="item">
-                          <a href="#">
-                            <img src="./assets/ProductList/product-list-2.png" alt="" />
+                            <p>Black rice hyaluronic cream</p>
+                            <span>Delivers internse hydration | All skin types</span>
+                            <h6>Rs.2999</h6>
+                            <button class="addtocartbtn">Add to cart</button>
                           </a>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="best-seller-details">
-                  <a href="#">
-                    <p>Black rice hyaluronic cream</p>
-                    <span>Delivers internse hydration | All skin types</span>
-                    <h6>Rs.2999</h6>
-                    <button class="addtocartbtn">Add to cart</button>
-                  </a>
-                </div>
               </div>
             </div>
-          </div>
-        </div>
+          </div> -->
+
+
+
+
+
+
+          <!-- Mobile Product Slider  -->
       </div>
     </div>
   </div>

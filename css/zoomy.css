@@ -5,7 +5,7 @@
 }
 
 .zoom-main {
-    height: 540px;
+    height: 585px;
     /* padding: 50px; */
     width: 100%;
     position: relative;
@@ -35,6 +35,7 @@
 }
 
 .zoom-main img {
+    width: 100%;
     height: 100%;
     display: block;
     background: #fff;
@@ -57,7 +58,7 @@
     /* padding: 5px; */
     margin-top: 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .zoom-right .zoom-thumb {
@@ -78,6 +79,12 @@
     height: 150px;
     /* padding: 25px; */
 }
+@media(max-width: 1199px){
+    .zoom .zoom-thumb a{
+        width: 135px;
+        height: 135px;
+    }
+  }
 
 .zoom-right .zoom-thumb a {
     /* float: left; */
@@ -127,5 +134,13 @@
     .zoom-thumb a {
         height: 20% !important;
         display: inline-block !important;
+    }
+}
+
+@media(max-width: 575px){
+    .zoom-main span{
+        border: 5px solid #fff;
+        overflow: hidden;
+        border-radius: 40px;
     }
 }
