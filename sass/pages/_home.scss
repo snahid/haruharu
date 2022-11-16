@@ -2593,10 +2593,13 @@ footer {
 
     .cart-product-wrapper {
         padding-top: 20px;
-        height: 390px;
+        height: 625px;
         overflow-y: scroll;
         padding-left: 15px;
         padding-right: 15px;
+        @media(max-width: 1199px){
+            height: 390px;
+        }
 
 
         .cart-product-box {
@@ -2726,7 +2729,7 @@ footer {
     .subtotal-and-checkout {
         position: absolute;
         width: 100%;
-        bottom: 55px;
+        bottom: 0;
         background-color: #e0dbd4;
         // margin-bottom: 80px;
         .subtotal {

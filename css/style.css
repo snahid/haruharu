@@ -2190,10 +2190,15 @@ footer .footer-bottom .left p a:hover {
 }
 .cart-wrapper .cart-product-wrapper {
   padding-top: 20px;
-  height: 390px;
+  height: 625px;
   overflow-y: scroll;
   padding-left: 15px;
   padding-right: 15px;
+}
+@media (max-width: 1199px) {
+  .cart-wrapper .cart-product-wrapper {
+    height: 390px;
+  }
 }
 .cart-wrapper .cart-product-wrapper .cart-product-box {
   position: relative;
@@ -2299,7 +2304,7 @@ footer .footer-bottom .left p a:hover {
 .cart-wrapper .subtotal-and-checkout {
   position: absolute;
   width: 100%;
-  bottom: 55px;
+  bottom: 0;
   background-color: #e0dbd4;
 }
 .cart-wrapper .subtotal-and-checkout .subtotal {
