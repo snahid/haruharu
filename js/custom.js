@@ -234,6 +234,10 @@ $(document).ready(function () {
         $(".macadamia").removeClass("hover-show");
     });
 
+
+   
+
+
     // $(".account-btn").click(function(){
     //     $("#addresses").removeClass("account-content-show");
     //     $("#orders").removeClass("account-content-show");
@@ -608,3 +612,6 @@ $('.productMobileInnerSlider').owlCarousel({
     }
 })
 // Product Mobile Slider 
+
+
+
