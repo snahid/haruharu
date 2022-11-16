@@ -2307,6 +2307,11 @@ footer .footer-bottom .left p a:hover {
   bottom: 0;
   background-color: #e0dbd4;
 }
+@media (max-width: 767px) {
+  .cart-wrapper .subtotal-and-checkout {
+    bottom: 55px;
+  }
+}
 .cart-wrapper .subtotal-and-checkout .subtotal {
   display: flex;
   flex-direction: row;

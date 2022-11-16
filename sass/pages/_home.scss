@@ -2731,6 +2731,9 @@ footer {
         width: 100%;
         bottom: 0;
         background-color: #e0dbd4;
+        @media(max-width: 767px){
+            bottom: 55px;
+        }
         // margin-bottom: 80px;
         .subtotal {
             display: flex;
