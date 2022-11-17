@@ -783,6 +783,9 @@
     background: #dad7cd;
     padding-top: 50px;
     padding-bottom: 100px;
+    @media(max-width: 767px){
+      padding-bottom: 0;
+    }
 
     .review-top {
       text-align: center;
@@ -1027,6 +1030,10 @@
         justify-content: center;
         align-items: center;
         margin-top: 100px;
+        @media(max-width: 767px){
+          margin-top: 70px;
+          margin-bottom: 40px !important;
+        }
 
         ul {
           margin: 0;
@@ -1053,6 +1060,9 @@
   .pair-section {
     text-align: center;
     margin-top: 100px;
+    @media(max-width: 767px){
+      margin-top: 60px;
+    }
 
     h2 {
       font-weight: 500;

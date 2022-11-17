@@ -1,6 +1,6 @@
 .blog-top-section{
     .shop-all-inner{
-        background-image: url(../assets/Blog/blog.png);
+        background-image: url(../assets/Blog/blog.jpg);
         padding: 380px 0;
         @media(max-width: 1440px){
             padding: 300px 0;
@@ -31,11 +31,11 @@
                 bottom: 40px;
             }
             @media(max-width: 767px){
-                left: 30px;
+                left: 0;
                 bottom: 30px;
             }
             @media(max-width: 575px){
-                position: unset;
+                // position: unset;
                 text-align: center;
             }
             h2{
