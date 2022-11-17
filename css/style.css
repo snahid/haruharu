@@ -2184,10 +2184,6 @@ footer .footer-bottom .left p a:hover {
   scrollbar-width: none !important;
 }
 
-.cart-wrapper {
-  height: calc(100vh - 78px);
-  position: relative;
-}
 .cart-wrapper .cart-product-wrapper {
   padding-top: 20px;
   height: 625px;
@@ -2306,11 +2302,6 @@ footer .footer-bottom .left p a:hover {
   width: 100%;
   bottom: 0;
   background-color: #e0dbd4;
-}
-@media (max-width: 767px) {
-  .cart-wrapper .subtotal-and-checkout {
-    bottom: 55px;
-  }
 }
 .cart-wrapper .subtotal-and-checkout .subtotal {
   display: flex;

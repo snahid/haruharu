@@ -2529,6 +2529,9 @@ footer {
 
 
 // Cart Modal 
+.cartoffcanvas{
+    // position: relative;
+}
 .offcanvas {
     background-color: #e0dbd4;
     overflow-y: scroll;
@@ -2585,8 +2588,9 @@ footer {
 }
 
 .cart-wrapper {
-    height: calc(100vh - 78px);
-    position: relative;
+    // height: calc(100vh - 78px);
+    // position: relative;
+ 
     // display: flex;
     // flex-direction: column;
     // justify-content: space-between;
@@ -2731,9 +2735,9 @@ footer {
         width: 100%;
         bottom: 0;
         background-color: #e0dbd4;
-        @media(max-width: 767px){
-            bottom: 55px;
-        }
+        // @media(max-width: 767px){
+        //     bottom: 55px;
+        // }
         // margin-bottom: 80px;
         .subtotal {
             display: flex;
